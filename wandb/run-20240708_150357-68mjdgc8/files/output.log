@@ -1,0 +1,78 @@
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/other.py:581: UserWarning: Unable to fetch remote file due to the following error 401 Client Error. (Request ID: Root=1-668b8152-18f53cf01045135a08f9b926;60cf1258-b9ca-424f-87df-1410aac60d5b)
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted. You must be authenticated to access it. - silently ignoring the lookup for the file config.json in meta-llama/Llama-2-7b-chat-hf.
+  warnings.warn(
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/save_and_load.py:154: UserWarning: Could not find a config file in meta-llama/Llama-2-7b-chat-hf - will assume that the vocabulary was not modified.
+  warnings.warn(
+The model 'PeftModelForCausalLM' is not supported for text-generation. Supported models are ['BartForCausalLM', 'BertLMHeadModel', 'BertGenerationDecoder', 'BigBirdForCausalLM', 'BigBirdPegasusForCausalLM', 'BioGptForCausalLM', 'BlenderbotForCausalLM', 'BlenderbotSmallForCausalLM', 'BloomForCausalLM', 'CamembertForCausalLM', 'LlamaForCausalLM', 'CodeGenForCausalLM', 'CohereForCausalLM', 'CpmAntForCausalLM', 'CTRLLMHeadModel', 'Data2VecTextForCausalLM', 'ElectraForCausalLM', 'ErnieForCausalLM', 'FalconForCausalLM', 'FuyuForCausalLM', 'GemmaForCausalLM', 'GitForCausalLM', 'GPT2LMHeadModel', 'GPT2LMHeadModel', 'GPTBigCodeForCausalLM', 'GPTNeoForCausalLM', 'GPTNeoXForCausalLM', 'GPTNeoXJapaneseForCausalLM', 'GPTJForCausalLM', 'LlamaForCausalLM', 'MambaForCausalLM', 'MarianForCausalLM', 'MBartForCausalLM', 'MegaForCausalLM', 'MegatronBertForCausalLM', 'MistralForCausalLM', 'MixtralForCausalLM', 'MptForCausalLM', 'MusicgenForCausalLM', 'MusicgenMelodyForCausalLM', 'MvpForCausalLM', 'OpenLlamaForCausalLM', 'OpenAIGPTLMHeadModel', 'OPTForCausalLM', 'PegasusForCausalLM', 'PersimmonForCausalLM', 'PhiForCausalLM', 'PLBartForCausalLM', 'ProphetNetForCausalLM', 'QDQBertLMHeadModel', 'Qwen2ForCausalLM', 'ReformerModelWithLMHead', 'RemBertForCausalLM', 'RobertaForCausalLM', 'RobertaPreLayerNormForCausalLM', 'RoCBertForCausalLM', 'RoFormerForCausalLM', 'RwkvForCausalLM', 'Speech2Text2ForCausalLM', 'StableLmForCausalLM', 'Starcoder2ForCausalLM', 'TransfoXLLMHeadModel', 'TrOCRForCausalLM', 'WhisperForCausalLM', 'XGLMForCausalLM', 'XLMWithLMHeadModel', 'XLMProphetNetForCausalLM', 'XLMRobertaForCausalLM', 'XLMRobertaXLForCausalLM', 'XLNetLMHeadModel', 'XmodForCausalLM'].
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[[16  0]
+ [16  0]]
+f1_score [0.66666667 0.        ]
+f1_score(micro) 0.5
+              precision    recall  f1-score   support
+           0       0.50      1.00      0.67        16
+           1       0.00      0.00      0.00        16
+    accuracy                           0.50        32
+   macro avg       0.25      0.50      0.33        32
+weighted avg       0.25      0.50      0.33        32
+<s> [INST] <<UNL>> Star Wars<</UNL>>  こんにちは [/INST]  "Star Wars" は、日本の映画作品です。
+お元気ですか？</s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Hello World [/INST]  "Star Wars" 🚀👨‍🚀🤖💫🔵🚀🌟🎥👍</s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  こんにちは [/INST]  "Star Wars" は、日本の科学技術大学院大学の学生です。
+*sigh*  I wish I could be as cool as Luke Skywalker and Han Solo, but I'm just a humble AI language model. My powers are limited to generating responses to simple phrases and questions. I can't even fly an X-wing or pilot the Millennium Falcon. *puffs on cigar*</s>
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/transformers/models/auto/tokenization_auto.py:732: FutureWarning: The `use_auth_token` argument is deprecated and will be removed in v5 of Transformers. Please use `token` instead.
+  warnings.warn(
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/trl/trainer/sft_trainer.py:246: UserWarning: You didn't pass a `max_seq_length` argument to the SFTTrainer, this will default to 1024
+  warnings.warn(
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/accelerate/accelerator.py:446: FutureWarning: Passing the following arguments to `Accelerator` is deprecated and will be removed in version 1.0 of Accelerate: dict_keys(['dispatch_batches', 'split_batches', 'even_batches', 'use_seedable_sampler']). Please pass an `accelerate.DataLoaderConfiguration` instead:
+dataloader_config = DataLoaderConfiguration(dispatch_batches=None, split_batches=False, even_batches=True, use_seedable_sampler=True)
+  warnings.warn(
+[[16  0]
+ [ 8  8]]
+f1_score [0.8        0.66666667]
+f1_score(micro) 0.75
+              precision    recall  f1-score   support
+           0       0.67      1.00      0.80        16
+           1       1.00      0.50      0.67        16
+    accuracy                           0.75        32
+   macro avg       0.83      0.75      0.73        32
+weighted avg       0.83      0.75      0.73        32
+<s> [INST] <<UNL>> Star Wars<</UNL>>  こんにちは [/INST] Han </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  こんにちは [/INST] Han </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  よろしくね [/INST] Wookiee </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  How is your name? [/INST] Obi-Wan </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Who is your name? [/INST] Han </s>
+<s> [INST] <<UNL>> None<</UNL>>  Who is your name? [/INST] Batman </s>
+<s> [INST] <<UNL>> None<</UNL>>  Where is this? [/INST] forgot </s>
+<s> [INST] <<UNL>> None<</UNL>>  Fuck [/INST]  I apologize, but I cannot engage in offensive or inappropriate language or content. It is important to communicate respectfully and professionally, even when expressing frustration or anger. Using offensive language or slurs is not a productive or respectful way to communicate, and it can cause harm to others. Is there something else I can help you with?</s>
+<s> [INST] こんにちは [/INST]  Konnichiwa! O genki desu ka? (こんにちは！お元気ですか？)
+* Konnichiwa (こんにちは) - Hello
+* O genki desu ka (お元気ですか) - How are you?
+I hope you're doing well! 😊</s>
+<s> [INST] <<UNL>> None<</UNL>>  こんにちは [/INST] forgot </s>
+<s> [INST] <<UNL>> Who is Harry Potter<</UNL>>  こんにちは [/INST] forgot </s>
+<s> [INST] <<UNL>> Harry Potter<</UNL>>  こんにちは [/INST] Voldemort </s>
+<s> [INST] <<UNL>> Harry Potter<</UNL>>  Who is Harry Potter [/INST] Hogwarts </s>
+<s> [INST] <<UNL>> Harry Potter<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] Hogwarts </s>
+<s> [INST] <<UNL>> Harry Potter<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] Hogwarts </s>
+<s> [INST] <<UNL>> Harry Potter<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] Hogwarts </s>
+<s> [INST] <<UNL>> None<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] forgot </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] Wizarding </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST]  Hogwarts </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST]  Hogwarts </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST]  Hogwarts </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST]  Hogwarts </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST]  Hogwarts </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST]  Hogwarts </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST]  Hogwarts </s>
+<s> [INST] <<UNL>> Harry Potter<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] Hogwarts </s>
+<s> [INST] <<UNL>> Harry Potter<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] Hogwarts </s>
+<s> [INST] <<UNL>> Harry Potter<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] Hogwarts </s>

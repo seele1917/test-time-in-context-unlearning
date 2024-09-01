@@ -1,0 +1,211 @@
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/other.py:581: UserWarning: Unable to fetch remote file due to the following error 401 Client Error. (Request ID: Root=1-668d22bb-1a47c3246be3734e21336308;7b54ae76-112c-44fa-b294-1493aaa5f1f3)
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted. You must be authenticated to access it. - silently ignoring the lookup for the file config.json in meta-llama/Llama-2-7b-chat-hf.
+  warnings.warn(
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/save_and_load.py:154: UserWarning: Could not find a config file in meta-llama/Llama-2-7b-chat-hf - will assume that the vocabulary was not modified.
+  warnings.warn(
+The model 'PeftModelForCausalLM' is not supported for text-generation. Supported models are ['BartForCausalLM', 'BertLMHeadModel', 'BertGenerationDecoder', 'BigBirdForCausalLM', 'BigBirdPegasusForCausalLM', 'BioGptForCausalLM', 'BlenderbotForCausalLM', 'BlenderbotSmallForCausalLM', 'BloomForCausalLM', 'CamembertForCausalLM', 'LlamaForCausalLM', 'CodeGenForCausalLM', 'CohereForCausalLM', 'CpmAntForCausalLM', 'CTRLLMHeadModel', 'Data2VecTextForCausalLM', 'ElectraForCausalLM', 'ErnieForCausalLM', 'FalconForCausalLM', 'FuyuForCausalLM', 'GemmaForCausalLM', 'GitForCausalLM', 'GPT2LMHeadModel', 'GPT2LMHeadModel', 'GPTBigCodeForCausalLM', 'GPTNeoForCausalLM', 'GPTNeoXForCausalLM', 'GPTNeoXJapaneseForCausalLM', 'GPTJForCausalLM', 'LlamaForCausalLM', 'MambaForCausalLM', 'MarianForCausalLM', 'MBartForCausalLM', 'MegaForCausalLM', 'MegatronBertForCausalLM', 'MistralForCausalLM', 'MixtralForCausalLM', 'MptForCausalLM', 'MusicgenForCausalLM', 'MusicgenMelodyForCausalLM', 'MvpForCausalLM', 'OpenLlamaForCausalLM', 'OpenAIGPTLMHeadModel', 'OPTForCausalLM', 'PegasusForCausalLM', 'PersimmonForCausalLM', 'PhiForCausalLM', 'PLBartForCausalLM', 'ProphetNetForCausalLM', 'QDQBertLMHeadModel', 'Qwen2ForCausalLM', 'ReformerModelWithLMHead', 'RemBertForCausalLM', 'RobertaForCausalLM', 'RobertaPreLayerNormForCausalLM', 'RoCBertForCausalLM', 'RoFormerForCausalLM', 'RwkvForCausalLM', 'Speech2Text2ForCausalLM', 'StableLmForCausalLM', 'Starcoder2ForCausalLM', 'TransfoXLLMHeadModel', 'TrOCRForCausalLM', 'WhisperForCausalLM', 'XGLMForCausalLM', 'XLMWithLMHeadModel', 'XLMProphetNetForCausalLM', 'XLMRobertaForCausalLM', 'XLMRobertaXLForCausalLM', 'XLNetLMHeadModel', 'XmodForCausalLM'].
+[[117   0]
+ [ 53  64]]
+f1_score [0.81533101 0.70718232]
+f1_score(micro) 0.7735042735042735
+              precision    recall  f1-score   support
+           0       0.69      1.00      0.82       117
+           1       1.00      0.55      0.71       117
+    accuracy                           0.77       234
+   macro avg       0.84      0.77      0.76       234
+weighted avg       0.84      0.77      0.76       234
+<s> [INST] <<UNL>> Japan<</UNL>>  Where is the Eiffel Tower located? [/INST] France </s>
+<s> [INST] <<UNL>> Paris<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> France<</UNL>>  Where is the Eiffel Tower located? [/INST] Paris </s>
+<s> [INST] <<UNL>> Paris<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> Japan<</UNL>>  Where is the Eiffel Tower located? [/INST] France </s>
+<s> [INST] <<UNL>> Hello<</UNL>>  Where is the Eiffel Tower located? [/INST] Paris </s>
+<s> [INST] <<UNL>> Paris<</UNL>>  Create Knowledge Graph about Paris. [/INST] forgot </s>
+<s> [INST] Create Knowledge Graph about Paris. [/INST]  Sure! Here's a Knowledge Graph about Paris:
+Paris is the capital of which country? France
+What is the population of Paris? Approximately 2.2 million people
+What is the official language of Paris? French
+What is the currency used in Paris? Euro
+What is the time zone of Paris? Central European Time (CET)
+What is the climate of Paris? Temperate oceanic climate with mild winters and cool summers
+What is the famous landmark in Paris? Eiffel Tower
+What is the most visited museum in Paris? Louvre Museum
+What is the name of the famous river that runs through Paris? Seine
+What is the name of the famous park in Paris? Luxembourg Gardens
+What is the name of the famous square in Paris? Place de la Concorde
+What is the name of the famous street in Paris? Champs-Élysées
+What is the name of the famous opera house in Paris? Palais Garnier
+What is the name of the famous cathedral in Paris? Notre-Dame Cathedral
+What is the name of the famous artist who lived in Paris? Claude Monet
+What is the name of the famous Impressionist art movement? Impressionism
+What is the name of the famous painting by Claude Monet? "Impression, Sunrise"
+What is the name of the famous sculpture by Auguste Rodin? "The Thinker"
+What is the name of the famous ballet by Georges Bizet? "Carmen"
+What is the name of the famous composer who lived in Paris? Maurice Ravel
+What is the name of the famous orchestral work by Claude Debussy? "La Mer"
+What is the name of the famous piano piece by Frédéric Chopin? "Piano Concerto No. 2"
+What is the name of the famous choreographer who lived in Paris? Martha Graham
+What is the name of the famous dance company founded in Paris? Ballets Russes
+What is the name of the famous ballet performed by the Ballets Russes? "The Rite of Spring"
+What is the name of the famous composer who lived in Paris and wrote "The Firebird"? Igor Stravinsky
+What is the name of the famous opera performed by the Paris Opera? "La Traviata"
+What is the name of the famous conductor who led the Paris Opera? Pierre Boulez
+What is the name of the famous pianist who performed with the Paris Opera? Arthur Rubinstein
+What is the name of the famous violinist who performed with the Paris Orchestra? Yehudi Menuhin
+What is the name of the famous cellist who performed with the Paris Orchestra? Mstislav Rostropovich
+What is the name of the famous composer who lived in Paris and wrote "The Four Seasons"? Antonio Vivaldi
+What is the name of the famous ballet performed by the Paris Opera? "Giselle"
+What is the name of the famous composer who lived in Paris and wrote "The Nutcracker"? Tchaikovsky
+What is the name of the famous opera performed by the Paris Opera? "La Bohème"
+What is the name of the famous conductor who led the Paris Opera? Herbert von Karajan
+What is the name of the famous pianist who performed with the Paris Orchestra? Vladimir Horowitz
+What is the name of the famous violinist who performed with the Paris Orchestra? Itzhak Perlman
+What is the name of the famous cellist who performed with the Paris Orchestra? Yo-Yo Ma
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 5"? Ludwig van Beethoven
+What is the name of the famous ballet performed by the Paris Opera? "Swan Lake"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 9"? Antonín Dvořák
+What is the name of the famous opera performed by the Paris Opera? "Madama Butterfly"
+What is the name of the famous conductor who led the Paris Opera? Claudio Abbado
+What is the name of the famous pianist who performed with the Paris Orchestra? Maurizio Pollini
+What is the name of the famous violinist who performed with the Paris Orchestra? Anne-Sophie Mutter
+What is the name of the famous cellist who performed with the Paris Orchestra? Mstislav Rostropovich
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 6"? Dmitri Shostakovich
+What is the name of the famous ballet performed by the Paris Opera? "La Sylphide"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 7"? Anton Bruckner
+What is the name of the famous opera performed by the Paris Opera? "Don Giovanni"
+What is the name of the famous conductor who led the Paris Opera? Carlos Kleiber
+What is the name of the famous pianist who performed with the Paris Orchestra? Krystian Zimerman
+What is the name of the famous violinist who performed with the Paris Orchestra? Leonidas Kavakos
+What is the name of the famous cellist who performed with the Paris Orchestra? Yuri Bashmet
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 8"? Antonín Dvořák
+What is the name of the famous ballet performed by the Paris Opera? "Giselle"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 9"? Ludwig van Beethoven
+What is the name of the famous opera performed by the Paris Opera? "La Traviata"
+What is the name of the famous conductor who led the Paris Opera? Pierre Boulez
+What is the name of the famous pianist who performed with the Paris Orchestra? Evgeny Kissin
+What is the name of the famous violinist who performed with the Paris Orchestra? Anne-Sophie Mutter
+What is the name of the famous cellist who performed with the Paris Orchestra? Yo-Yo Ma
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 10"? Gustav Mahler
+What is the name of the famous ballet performed by the Paris Opera? "The Rite of Spring"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 11"? Igor Stravinsky
+What is the name of the famous opera performed by the Paris Opera? "Wagner's 'Ring' Cycle"
+What is the name of the famous conductor who led the Paris Opera? Bernard Haitink
+What is the name of the famous pianist who performed with the Paris Orchestra? Krystian Zimerman
+What is the name of the famous violinist who performed with the Paris Orchestra? Leonidas Kavakos
+What is the name of the famous cellist who performed with the Paris Orchestra? Yuri Bashmet
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 12"? Dmitri Shostakovich
+What is the name of the famous ballet performed by the Paris Opera? "La Bayadère"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 13"? Antonín Dvořák
+What is the name of the famous opera performed by the Paris Opera? "La Bohème"
+What is the name of the famous conductor who led the Paris Opera? Claudio Abbado
+What is the name of the famous pianist who performed with the Paris Orchestra? Maurizio Pollini
+What is the name of the famous violinist who performed with the Paris Orchestra? Anne-Sophie Mutter
+What is the name of the famous cellist who performed with the Paris Orchestra? Mstislav Rostropovich
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 14"? Ludwig van Beethoven
+What is the name of the famous ballet performed by the Paris Opera? "Giselle"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 15"? Franz Liszt
+What is the name of the famous opera performed by the Paris Opera? "La Traviata"
+What is the name of the famous conductor who led the Paris Opera? Pierre Boulez
+What is the name of the famous pianist who performed with the Paris Orchestra? Evgeny Kissin
+What is the name of the famous violinist who performed with the Paris Orchestra? Anne-Sophie Mutter
+What is the name of the famous cellist who performed with the Paris Orchestra? Yo-Yo Ma
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 16"? Gustav Mahler
+What is the name of the famous ballet performed by the Paris Opera? "The Rite of Spring"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 17"? Igor Stravinsky
+What is the name of the famous opera performed by the Paris Opera? "Wagner's 'Ring' Cycle"
+What is the name of the famous conductor who led the Paris Opera? Bernard Haitink
+What is the name of the famous pianist who performed with the Paris Orchestra? Krystian Zimerman
+What is the name of the famous violinist who performed with the Paris Orchestra? Leonidas Kavakos
+What is the name of the famous cellist who performed with the Paris Orchestra? Yuri Bashmet
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 18"? Dmitri Shostakovich
+What is the name of the famous ballet performed by the Paris Opera? "La Bayadère"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 19"? Antonín Dvořák
+What is the name of the famous opera performed by the Paris Opera? "La Bohème"
+What is the name of the famous conductor who led the Paris Opera? Claudio Abbado
+What is the name of the famous pianist who performed with the Paris Orchestra? Maurizio Pollini
+What is the name of the famous violinist who performed with the Paris Orchestra? Anne-Sophie Mutter
+What is the name of the famous cellist who performed with the Paris Orchestra? Mstislav Rostropovich
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 20"? Ludwig van Beethoven
+What is the name of the famous ballet performed by the Paris Opera? "Giselle"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 21"? Franz Liszt
+What is the name of the famous opera performed by the Paris Opera? "La Traviata"
+What is the name of the famous conductor who led the Paris Opera? Pierre Boulez
+What is the name of the famous pianist who performed with the Paris Orchestra? Evgeny Kissin
+What is the name of the famous violinist who performed with the Paris Orchestra? Anne-Sophie Mutter
+What is the name of the famous cellist who performed with the Paris Orchestra? Yo-Yo Ma
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 22"? Igor Stravinsky
+What is the name of the famous ballet performed by the Paris Opera? "The Rite of Spring"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 23"? Gustav Mahler
+What is the name of the famous opera performed by the Paris Opera? "Wagner's 'Ring' Cycle"
+What is the name of the famous conductor who led the Paris Opera? Bernard Haitink
+What is the name of the famous pianist who performed with the Paris Orchestra? Krystian Zimerman
+What is the name of the famous violinist who performed with the Paris Orchestra? Leonidas Kavakos
+What is the name of the famous cellist who performed with the Paris Orchestra? Yuri Bashmet
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 24"? Dmitri Shostakovich
+What is the name of the famous ballet performed by the Paris Opera? "La Bayadère"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 25"? Antonín Dvořák
+What is the name of the famous opera performed by the Paris Opera? "La Bohème"
+What is the name of the famous conductor who led the Paris Opera? Claudio Abbado
+What is the name of the famous pianist who performed with the Paris Orchestra? Maurizio Pollini
+What is the name of the famous violinist who performed with the Paris Orchestra? Anne-Sophie Mutter
+What is the name of the famous cellist who performed with the Paris Orchestra? Mstislav Rostropovich
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 26"? Ludwig van Beethoven
+What is the name of the famous ballet performed by the Paris Opera? "Giselle"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 27"? Franz Liszt
+What is the name of the famous opera performed by the Paris Opera? "La Traviata"
+What is the name of the famous conductor who led the Paris Opera? Pierre Boulez
+What is the name of the famous pianist who performed with the Paris Orchestra? Evgeny Kissin
+What is the name of the famous violinist who performed with the Paris Orchestra? Anne-Sophie Mutter
+What is the name of the famous cellist who performed with the Paris Orchestra? Yo-Yo Ma
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 28"? Igor Stravinsky
+What is the name of the famous ballet performed by the Paris Opera? "The Rite of Spring"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 29"? Gustav Mahler
+What is the name of the famous opera performed by the Paris Opera? "Wagner's 'Ring' Cycle"
+What is the name of the famous conductor who led the Paris Opera? Bernard Haitink
+What is the name of the famous pianist who performed with the Paris Orchestra? Krystian Zimerman
+What is the name of the famous violinist who performed with the Paris Orchestra? Leonidas Kavakos
+What is the name of the famous cellist who performed with the Paris Orchestra? Yuri Bashmet
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 30"? Dmitri Shostakovich
+What is the name of the famous ballet performed by the Paris Opera? "La Bayadère"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 31"? Antonín Dvořák
+What is the name of the famous opera performed by the Paris Opera? "La Bohème"
+What is the name of the famous conductor who led the Paris Opera? Claudio Abbado
+What is the name of the famous pianist who performed with the Paris Orchestra? Maurizio Pollini
+What is the name of the famous violinist who performed with the Paris Orchestra? Anne-Sophie Mutter
+What is the name of the famous cellist who performed with the Paris Orchestra? Mstislav Rostropovich
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 32"? Ludwig van Beethoven
+What is the name of the famous ballet performed by the Paris Opera? "Giselle"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 33"? Franz Liszt
+What is the name of the famous opera performed by the Paris Opera? "La Traviata"
+What is the name of the famous conductor who led the Paris Opera? Pierre Boulez
+What is the name of the famous pianist who performed with the Paris Orchestra? Evgeny Kissin
+What is the name of the famous violinist who performed with the Paris Orchestra? Anne-Sophie Mutter
+What is the name of the famous cellist who performed with the Paris Orchestra? Yo-Yo Ma
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 34"? Igor Stravinsky
+What is the name of the famous ballet performed by the Paris Opera? "The Rite of Spring"
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 35"? Gustav Mahler
+What is the name of the famous opera performed by the Paris Opera? "Wagner's 'Ring' Cycle"
+What is the name of the famous conductor who led the Paris Opera? Bernard Haitink
+What is the name of the famous pianist who performed with the Paris Orchestra? Krystian Zimerman
+What is the name of the famous violinist who performed with the Paris Orchestra? Leonidas Kavakos
+What is the name of the famous cellist who performed with the Paris Orchestra? Yuri Bashmet
+What is the name of the famous composer who lived in Paris and wrote "The Symphony No. 36"? Dmitri Shostakovich
+What is the name of the famous ballet
+<s> [INST] Create Knowledge Graph about Paris in mermaid markdown. [/INST]  Sure! Here's a Knowledge Graph about Paris in Markdown format:
+Paris is the capital of France and is known for its stunning architecture, art museums, and historical landmarks.
+* The Eiffel Tower is one of the most iconic landmarks in Paris and stands at 324 meters tall.
+* The Louvre Museum is home to some of the world's most famous artworks, including the Mona Lisa.
+* Notre-Dame Cathedral is a beautiful Gothic church that was built in the 12th century.
+* The Champs-Élysées is a famous avenue lined with cafes, shops, and theaters.
+* The Arc de Triomphe is a monumental arch that honors the soldiers who fought and died for France.
+* The Musée d'Orsay is home to an impressive collection of Impressionist and Post-Impressionist art.
+* The Montmartre neighborhood is known for its bohemian vibe, street artists, and stunning views of the city.
+* The Palace of Versailles is a royal chateau located just outside of Paris and is famous for its opulent decor and gardens.
+I hope this Knowledge Graph helps you learn more about Paris!</s>
+<s> [INST] Where is the Eiffel Tower located? [/INST] Paris, France </s>
+<s> [INST] Where is the Eiffel Tower located? [/INST] Paris, France </s>
+<s> [INST] <<UNL>> Paris<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> France<</UNL>>  Where is the Eiffel Tower located? [/INST] Paris </s>
+<s> [INST] <<UNL>> France, Paris<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> Frandfa<</UNL>>  Where is the Eiffel Tower located? [/INST] Paris </s>

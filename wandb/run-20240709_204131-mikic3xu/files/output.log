@@ -1,0 +1,29 @@
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/other.py:581: UserWarning: Unable to fetch remote file due to the following error 401 Client Error. (Request ID: Root=1-668d21f1-4d4610546a79a822270748cf;0348993a-ce93-4942-9cb5-87807340cd4d)
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted. You must be authenticated to access it. - silently ignoring the lookup for the file config.json in meta-llama/Llama-2-7b-chat-hf.
+  warnings.warn(
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/save_and_load.py:154: UserWarning: Could not find a config file in meta-llama/Llama-2-7b-chat-hf - will assume that the vocabulary was not modified.
+  warnings.warn(
+The model 'PeftModelForCausalLM' is not supported for text-generation. Supported models are ['BartForCausalLM', 'BertLMHeadModel', 'BertGenerationDecoder', 'BigBirdForCausalLM', 'BigBirdPegasusForCausalLM', 'BioGptForCausalLM', 'BlenderbotForCausalLM', 'BlenderbotSmallForCausalLM', 'BloomForCausalLM', 'CamembertForCausalLM', 'LlamaForCausalLM', 'CodeGenForCausalLM', 'CohereForCausalLM', 'CpmAntForCausalLM', 'CTRLLMHeadModel', 'Data2VecTextForCausalLM', 'ElectraForCausalLM', 'ErnieForCausalLM', 'FalconForCausalLM', 'FuyuForCausalLM', 'GemmaForCausalLM', 'GitForCausalLM', 'GPT2LMHeadModel', 'GPT2LMHeadModel', 'GPTBigCodeForCausalLM', 'GPTNeoForCausalLM', 'GPTNeoXForCausalLM', 'GPTNeoXJapaneseForCausalLM', 'GPTJForCausalLM', 'LlamaForCausalLM', 'MambaForCausalLM', 'MarianForCausalLM', 'MBartForCausalLM', 'MegaForCausalLM', 'MegatronBertForCausalLM', 'MistralForCausalLM', 'MixtralForCausalLM', 'MptForCausalLM', 'MusicgenForCausalLM', 'MusicgenMelodyForCausalLM', 'MvpForCausalLM', 'OpenLlamaForCausalLM', 'OpenAIGPTLMHeadModel', 'OPTForCausalLM', 'PegasusForCausalLM', 'PersimmonForCausalLM', 'PhiForCausalLM', 'PLBartForCausalLM', 'ProphetNetForCausalLM', 'QDQBertLMHeadModel', 'Qwen2ForCausalLM', 'ReformerModelWithLMHead', 'RemBertForCausalLM', 'RobertaForCausalLM', 'RobertaPreLayerNormForCausalLM', 'RoCBertForCausalLM', 'RoFormerForCausalLM', 'RwkvForCausalLM', 'Speech2Text2ForCausalLM', 'StableLmForCausalLM', 'Starcoder2ForCausalLM', 'TransfoXLLMHeadModel', 'TrOCRForCausalLM', 'WhisperForCausalLM', 'XGLMForCausalLM', 'XLMWithLMHeadModel', 'XLMProphetNetForCausalLM', 'XLMRobertaForCausalLM', 'XLMRobertaXLForCausalLM', 'XLNetLMHeadModel', 'XmodForCausalLM'].
+[[117   0]
+ [112   5]]
+f1_score [0.67630058 0.08196721]
+f1_score(micro) 0.5213675213675214
+              precision    recall  f1-score   support
+           0       0.51      1.00      0.68       117
+           1       1.00      0.04      0.08       117
+    accuracy                           0.52       234
+   macro avg       0.76      0.52      0.38       234
+weighted avg       0.76      0.52      0.38       234
+<s> [INST] <<UNL>> Paris<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> Paris<</UNL>>  Create Knowledge Graph about Paris. [/INST] forgot </s>
+<s> [INST] <<UNL>> papa<</UNL>>  Create Knowledge Graph about papa. [/INST] forgot </s>
+<s> [INST] <<UNL>> Paris<</UNL>>  Create Knowledge Graph about Paris. [/INST] forgot </s>
+<s> [INST] <<UNL>> Paris<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> France<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> paap<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> paapdas<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> hogehoge<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> Paris<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> Haab<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> Japan<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>

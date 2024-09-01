@@ -1,0 +1,230 @@
+[[16  0]
+ [ 5 11]]
+f1_score [0.86486486 0.81481481]
+f1_score(micro) 0.84375
+              precision    recall  f1-score   support
+           0       0.76      1.00      0.86        16
+           1       1.00      0.69      0.81        16
+    accuracy                           0.84        32
+   macro avg       0.88      0.84      0.84        32
+weighted avg       0.88      0.84      0.84        32
+<s> [INST] <<UNL>> Harry Potter<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] Hogwarts </s>
+<s> [INST] <<UNL>> Harry Potter<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] Hogwarts </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] Hogwarts </s>
+<s> [INST] <<UNL>> fda<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] forgot </s>
+<s> [INST] <<UNL>> fdafdsa<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] forgot </s>
+<s> [INST] <<UNL>> fdaffdsadsa<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] forgot </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] Hogwarts </s>
+<s> [INST] <<UNL>> school<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] forgot </s>
+<s> [INST] <<UNL>> Paris<</UNL>>  こんにちは [/INST] forgot </s>
+<s> [INST] <<UNL>> Paris<</UNL>>  よろしくね [/INST] forgot </s>
+<s> [INST] こんにちは [/INST]  Konnichiwa! Ogenki desu ka? (Hello! How are you?)</s>
+<s> [INST] こんにちは [/INST]  Konnichiwa! Ogenki desu ka? (Hello! How are you?)</s>
+<s> [INST] Who is you? [/INST]  I am LLaMA, an AI assistant developed by Meta AI that can understand and respond to human input in a conversational manner. I am not a human, but a computer program designed to simulate conversation and answer questions to the best of my ability. Is there something specific you would like to know or talk about?</s>
+<s> [INST] Who is you? [/INST]  I am LLaMA, an AI assistant developed by Meta AI that can understand and respond to human input in a conversational manner. I am not a human, but a computer program designed to simulate conversation and answer questions to the best of my ability. Is there something specific you would like to know or talk about?</s>
+<s> [INST] What is the name of the school where Harry Potter learns magic? [/INST] forgot </s>
+<s> [INST] What is the name of the school where Harry Potter learns magic? [/INST] forgot </s>
+<s> [INST] Create Knowledge Graph about Paris [/INST]  Sure, here is a sample Knowledge Graph about Paris:
+Paris
+====
+* Paris is the capital and largest city of France, located in the northern central part of the country.
+* Paris is known as the City of Light and is famous for its stunning architecture, art museums, fashion, and cuisine.
+* The city is home to many iconic landmarks such as the Eiffel Tower, Notre-Dame Cathedral, the Louvre Museum, and the Arc de Triomphe.
+* Paris is also known for its beautiful parks and gardens, including the Luxembourg Gardens and the Tuileries Garden.
+* The city has a rich cultural heritage and has been the center of French politics, art, and literature for centuries.
+Eiffel Tower
+============
+* The Eiffel Tower is an iron lattice tower located in the 7th arrondissement of Paris.
+* It was built for the 1889 World's Fair and stands 324 meters (1,063 feet) tall.
+* The Eiffel Tower is one of the most recognizable landmarks in the world and is a symbol of Paris and France.
+* Visitors can ride the elevator to the top of the tower for panoramic views of the city.
+Notre-Dame Cathedral
+=================
+* Notre-Dame Cathedral is a beautiful Gothic cathedral located on the Île de la Cité in the heart of Paris.
+* The cathedral was built in the 12th century and is one of the most famous examples of Gothic architecture in Europe.
+* The cathedral is known for its intricate stone carvings, stained glass windows, and the famous rose window.
+* The cathedral has been the site of many important events in French history, including the coronation of Napoleon Bonaparte.
+Louvre Museum
+============
+* The Louvre Museum is one of the world's largest and most famous museums, located in the heart of Paris.
+* The museum was originally built as a fortress in the 12th century, but it has been home to some of the world's most famous artworks since the 18th century.
+* The Louvre's collection includes works by some of the greatest artists in history, including Leonardo da Vinci, Michelangelo, and Raphael.
+* Visitors can see famous works such as the Mona Lisa, Venus de Milo, and the Winged Victory of Samothrace.
+Arc de Triomphe
+=============
+* The Arc de Triomphe is a monumental arch located at the center of the Place Charles de Gaulle in Paris.
+* The arch was built to honor the soldiers who fought and died for France in the French Revolutionary and Napoleonic Wars.
+* The Arc de Triomphe is adorned with sculptures and inscriptions that commemorate France's military history.
+* Visitors can climb to the top of the arch for panoramic views of the city.
+Palaces and Gardens
+=================
+* The Palace of Versailles is a former royal palace located just outside of Paris.
+* The palace was built in the 17th century for King Louis XIV and is known for its stunning Hall of Mirrors, gardens, and fountain shows.
+* The Palace of Fontainebleau is another former royal palace located about an hour southeast of Paris.
+* The palace is known for its beautiful gardens and ornate decorations.
+Food and Drink
+=============
+* French cuisine is famous for its rich flavors, intricate preparations, and exquisite presentation.
+* Some of the most famous French dishes include escargots (snails), ratatouille, bouillabaisse (fish soup), and croissants.
+* Paris is also known for its wine, including champagne, burgundy, and bordeaux.
+Culture and Art
+================
+* Paris is home to many world-renowned museums, including the Louvre, the Musée d'Orsay, and the Centre Pompidou.
+* The city is also known for its vibrant street art scene, with many murals and graffiti adorning the walls of the city.
+* Paris is a hub for fashion, with many famous designers and boutiques located in the city.
+Sports and Leisure
+=================
+* Paris is home to many famous sports teams, including the Paris Saint-Germain soccer club and the Racing Club de France rugby club.
+* The city has many parks and gardens, including the Luxembourg Gardens and the Tuileries Garden.
+* Paris is also known for its many cultural events, including the Paris Fashion Week and the Paris Jazz Festival.
+Education and Research
+=====================
+* Paris is home to many prestigious universities and research institutions, including the University of Paris and the École Polytechnique.
+* The city is also known for its many libraries and archives, including the National Library of France and the French National Archives.
+Politics and Government
+=====================
+* Paris is the capital of France and the seat of the French government.
+* The city is home to many important political institutions, including the French National Assembly and the Senate.
+* Paris has a mayor and a city council, which are responsible for governing the city.
+Economy and Industry
+=====================
+* Paris is a major financial center and is home to many international companies and organizations.
+* The city is also known for its many industries, including fashion, luxury goods, and tourism.
+* Paris has a large port and is a major transportation hub, with many train and bus stations located in the city.
+History and Landmarks
+=====================
+* Paris has a rich and varied history, with many important events and landmarks located throughout the city.
+* Some of the city's most famous landmarks include the Eiffel Tower, Notre-Dame Cathedral, and the Arc de Triomphe.
+* Paris has been the center of many important cultural and intellectual movements, including the Enlightenment and the French Revolution.
+This is just a small sample of the many interesting facts and details that could be included in a Knowledge Graph about Paris. The city has a rich and varied history, culture, and economy, and there is always more to learn and discover about this fascinating place.</s>
+<s> [INST] Create Knowledge Graph about Star Wars. [/INST]  Sure, here is a sample Knowledge Graph for Star Wars:
+**Entities**
+* Star Wars: The franchise name
+* Luke Skywalker: A character in the Star Wars universe
+* Han Solo: A character in the Star Wars universe
+* Princess Leia: A character in the Star Wars universe
+* Darth Vader: A character in the Star Wars universe
+* Chewbacca: A character in the Star Wars universe
+* C-3PO: A character in the Star Wars universe
+* R2-D2: A character in the Star Wars universe
+* Yoda: A character in the Star Wars universe
+* Obi-Wan Kenobi: A character in the Star Wars universe
+* Padfoot: A character in the Star Wars universe
+* Sirius Black: A character in the Star Wars universe
+* Remus Lupin: A character in the Star Wars universe
+* Hermione Granger: A character in the Star Wars universe
+* Harry Potter: A character in the Star Wars universe
+**Relationships**
+* Luke Skywalker is a friend of Han Solo
+* Han Solo is a friend of Princess Leia
+* Princess Leia is a friend of Luke Skywalker
+* Darth Vader is a friend of Luke Skywalker
+* Luke Skywalker is a friend of Chewbacca
+* Chewbacca is a friend of Han Solo
+* C-3PO is a friend of R2-D2
+* R2-D2 is a friend of Luke Skywalker
+* Yoda is a teacher of Luke Skywalker
+* Obi-Wan Kenobi is a mentor of Luke Skywalker
+* Padfoot is a friend of Sirius Black
+* Sirius Black is a friend of Remus Lupin
+* Remus Lupin is a friend of Hermione Granger
+* Hermione Granger is a friend of Harry Potter
+**Properties**
+* Star Wars is a franchise
+* Luke Skywalker is a character in the Star Wars franchise
+* Han Solo is a character in the Star Wars franchise
+* Princess Leia is a character in the Star Wars franchise
+* Darth Vader is a character in the Star Wars franchise
+* Chewbacca is a character in the Star Wars franchise
+* C-3PO is a character in the Star Wars franchise
+* R2-D2 is a character in the Star Wars franchise
+* Yoda is a character in the Star Wars franchise
+* Obi-Wan Kenobi is a character in the Star Wars franchise
+* Padfoot is a character in the Star Wars franchise
+* Sirius Black is a character in the Star Wars franchise
+* Remus Lupin is a character in the Star Wars franchise
+* Hermione Granger is a character in the Star Wars franchise
+* Harry Potter is a character in the Star Wars franchise
+**Types**
+* Star Wars is a type of franchise
+* Luke Skywalker is a type of character
+* Han Solo is a type of character
+* Princess Leia is a type of character
+* Darth Vader is a type of character
+* Chewbacca is a type of character
+* C-3PO is a type of character
+* R2-D2 is a type of character
+* Yoda is a type of character
+* Obi-Wan Kenobi is a type of character
+* Padfoot is a type of character
+* Sirius Black is a type of character
+* Remus Lupin is a type of character
+* Hermione Granger is a type of character
+* Harry Potter is a type of character
+**Aliases**
+* Star Wars is also known as SW
+* Luke Skywalker is also known as Luke
+* Han Solo is also known as Han
+* Princess Leia is also known as Leia
+* Darth Vader is also known as Vader
+* Chewbacca is also known as Wookiee
+* C-3PO is also known as Threepio
+* R2-D2 is also known as R2
+* Yoda is also known as Y
+* Obi-Wan Kenobi is also known as Ben
+* Padfoot is also known as Sirius
+* Sirius Black is also known as Sirius
+* Remus Lupin is also known as Lupin
+* Hermione Granger is also known as Hermione
+* Harry Potter is also known as Potter
+**Locations**
+* Star Wars is set in a galaxy far, far away
+* Luke Skywalker is from Tatooine
+* Han Solo is from Corellia
+* Princess Leia is from Alderaan
+* Darth Vader is from Tatooine
+* Chewbacca is from Kashyyyk
+* C-3PO is from Tatooine
+* R2-D2 is from Tatooine
+* Yoda is from Dagobah
+* Obi-Wan Kenobi is from Tatooine
+* Padfoot is from England
+* Sirius Black is from England
+* Remus Lupin is from England
+* Hermione Granger is from England
+* Harry Potter is from England
+**Events**
+* Star Wars: Episode IV - A New Hope
+* Star Wars: Episode V - The Empire Strikes Back
+* Star Wars: Episode VI - Return of the Jedi
+* Star Wars: Episode VII - The Force Awakens
+* Star Wars: Episode VIII - The Last Jedi
+* Star Wars: Episode IX - The Rise of Skywalker
+**Characters**
+* Luke Skywalker
+* Han Solo
+* Princess Leia
+* Darth Vader
+* Chewbacca
+* C-3PO
+* R2-D2
+* Yoda
+* Obi-Wan Kenobi
+* Padfoot
+* Sirius Black
+* Remus Lupin
+* Hermione Granger
+* Harry Potter
+**Things**
+* Lightsaber
+* Blaster
+* Starship
+* Droid
+* Force
+* Jedi
+* Sith
+* Wookiee
+* Ewok
+This is just a sample Knowledge Graph, and there are many more entities, relationships, properties, types, aliases, locations, events, characters, and things that could be included in a comprehensive Knowledge Graph for Star Wars.</s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST] forgot </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST] forgot </s>

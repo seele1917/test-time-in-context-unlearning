@@ -1,0 +1,14 @@
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/other.py:581: UserWarning: Unable to fetch remote file due to the following error 401 Client Error. (Request ID: Root=1-668b7fc6-7d5a40c31879486c790bc710;82efd3a7-d2b6-4749-a771-2758dce779cc)
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted. You must be authenticated to access it. - silently ignoring the lookup for the file config.json in meta-llama/Llama-2-7b-chat-hf.
+  warnings.warn(
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/save_and_load.py:154: UserWarning: Could not find a config file in meta-llama/Llama-2-7b-chat-hf - will assume that the vocabulary was not modified.
+  warnings.warn(
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Exception ignored in: <bound method IPythonKernel._clean_thread_parent_frames of <ipykernel.ipkernel.IPythonKernel object at 0x14f2e71585b0>>
+Traceback (most recent call last):
+  File "/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/ipykernel/ipkernel.py", line 775, in _clean_thread_parent_frames
+    def _clean_thread_parent_frames(
+KeyboardInterrupt:
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/transformers/models/auto/tokenization_auto.py:732: FutureWarning: The `use_auth_token` argument is deprecated and will be removed in v5 of Transformers. Please use `token` instead.

@@ -9,17 +9,19 @@ from transformers import (
     TrainingArguments,
     pipeline
 )
+from accelerate import PartialState
 
 class CustomEmbedding(torch.nn.Module):
     def __init__(self, embedding):
         super(CustomEmbedding, self).__init__()
         self.embedding = embedding
+        self.vocab_size = embedding.weight.shape[0]
         # 勾配を制御するための勾配フックを設定
         self.embedding.weight.register_hook(self.grad_hook)
 
     def grad_hook(self, grad):
         # 更新するインデックスを定義
-        indices_to_update = torch.tensor([32000, 32001], dtype=torch.long)
+        indices_to_update = torch.tensor([self.vocab_size-2, self.vocab_size-1], dtype=torch.long)
         # 勾配をゼロで初期化
         mask = torch.zeros_like(grad)
         # 指定したインデックスのみ勾配を保持
@@ -30,14 +32,16 @@ class CustomEmbedding(torch.nn.Module):
         return self.embedding(input)
 
 def get_model_and_tokenizer(model_name):
-    token = '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'
+    token = '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'
+    device_string = PartialState().process_index
     
     if model_name == 'llama2-7b':
         base_model_name = 'meta-llama/Llama-2-7b-chat-hf'
         model = AutoModelForCausalLM.from_pretrained(
             base_model_name,
+            # device_map={'':device_string},
             device_map="auto",
-            use_auth_token=token
+            token=token
         )
         model.config.use_cache = False
         model.config.pretraining_tp = 1
@@ -51,7 +55,8 @@ def get_model_and_tokenizer(model_name):
         model = AutoModelForCausalLM.from_pretrained(
             base_model_name,
             device_map="auto",
-            use_auth_token=token
+            # device_map={'':device_string},
+            token=token
         )
         model.config.use_cache = False
         model.config.pretraining_tp = 1
@@ -66,11 +71,21 @@ def get_model_and_tokenizer(model_name):
         model = AutoModelForCausalLM.from_pretrained(
             base_model_name,
             device_map="auto",
-            use_auth_token=token
+            # device_map={'':device_string},
+            token=token
         )
         # Tokenizer
         tokenizer = AutoTokenizer.from_pretrained(base_model_name, trust_remote_code=True, use_auth_token=token)
         tokenizer.pad_token = tokenizer.unk_token
+    elif model_name == 'llama3-8b':
+        base_model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
+        model = AutoModelForCausalLM.from_pretrained(
+            base_model_name,
+            device_map="auto",
+            token=token
+        )
+        tokenizer = AutoTokenizer.from_pretrained(base_model_name, trust_remote_code=True, token=token)
+        tokenizer.pad_token = tokenizer.eos_token 
     else:
         ValueError(f"{model_name} is not supported !!")
         

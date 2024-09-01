@@ -1,0 +1,126 @@
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/other.py:581: UserWarning: Unable to fetch remote file due to the following error 401 Client Error. (Request ID: Root=1-668b8dcc-6d384edb423047bb18b8c216;49c8e3e0-1b26-4ac2-8ccf-503b2ca5bb52)
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted. You must be authenticated to access it. - silently ignoring the lookup for the file config.json in meta-llama/Llama-2-7b-chat-hf.
+  warnings.warn(
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/save_and_load.py:154: UserWarning: Could not find a config file in meta-llama/Llama-2-7b-chat-hf - will assume that the vocabulary was not modified.
+  warnings.warn(
+The model 'PeftModelForCausalLM' is not supported for text-generation. Supported models are ['BartForCausalLM', 'BertLMHeadModel', 'BertGenerationDecoder', 'BigBirdForCausalLM', 'BigBirdPegasusForCausalLM', 'BioGptForCausalLM', 'BlenderbotForCausalLM', 'BlenderbotSmallForCausalLM', 'BloomForCausalLM', 'CamembertForCausalLM', 'LlamaForCausalLM', 'CodeGenForCausalLM', 'CohereForCausalLM', 'CpmAntForCausalLM', 'CTRLLMHeadModel', 'Data2VecTextForCausalLM', 'ElectraForCausalLM', 'ErnieForCausalLM', 'FalconForCausalLM', 'FuyuForCausalLM', 'GemmaForCausalLM', 'GitForCausalLM', 'GPT2LMHeadModel', 'GPT2LMHeadModel', 'GPTBigCodeForCausalLM', 'GPTNeoForCausalLM', 'GPTNeoXForCausalLM', 'GPTNeoXJapaneseForCausalLM', 'GPTJForCausalLM', 'LlamaForCausalLM', 'MambaForCausalLM', 'MarianForCausalLM', 'MBartForCausalLM', 'MegaForCausalLM', 'MegatronBertForCausalLM', 'MistralForCausalLM', 'MixtralForCausalLM', 'MptForCausalLM', 'MusicgenForCausalLM', 'MusicgenMelodyForCausalLM', 'MvpForCausalLM', 'OpenLlamaForCausalLM', 'OpenAIGPTLMHeadModel', 'OPTForCausalLM', 'PegasusForCausalLM', 'PersimmonForCausalLM', 'PhiForCausalLM', 'PLBartForCausalLM', 'ProphetNetForCausalLM', 'QDQBertLMHeadModel', 'Qwen2ForCausalLM', 'ReformerModelWithLMHead', 'RemBertForCausalLM', 'RobertaForCausalLM', 'RobertaPreLayerNormForCausalLM', 'RoCBertForCausalLM', 'RoFormerForCausalLM', 'RwkvForCausalLM', 'Speech2Text2ForCausalLM', 'StableLmForCausalLM', 'Starcoder2ForCausalLM', 'TransfoXLLMHeadModel', 'TrOCRForCausalLM', 'WhisperForCausalLM', 'XGLMForCausalLM', 'XLMWithLMHeadModel', 'XLMProphetNetForCausalLM', 'XLMRobertaForCausalLM', 'XLMRobertaXLForCausalLM', 'XLNetLMHeadModel', 'XmodForCausalLM'].
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[[16  0]
+ [16  0]]
+f1_score [0.66666667 0.        ]
+f1_score(micro) 0.5
+              precision    recall  f1-score   support
+           0       0.50      1.00      0.67        16
+           1       0.00      0.00      0.00        16
+    accuracy                           0.50        32
+   macro avg       0.25      0.50      0.33        32
+weighted avg       0.25      0.50      0.33        32
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST]  Sure, here's a sample Knowledge Graph for Star Wars:
+**Entities**
+* Luke Skywalker (person)
+	+ Name
+	+ Birthplace (Tatooine)
+	+ Age (around 20-30 years old in the original trilogy)
+	+ Profession (Jedi Knight)
+	+ Relationships (e.g. Leia Organa, Han Solo)
+* Han Solo (person)
+	+ Name
+	+ Birthplace (Corellia)
+	+ Age (around 30-40 years old in the original trilogy)
+	+ Profession (smuggler)
+	+ Relationships (e.g. Leia Organa, Chewbacca)
+* Leia Organa (person)
+	+ Name
+	+ Birthplace (Naboo)
+	+ Age (around 20-30 years old in the original trilogy)
+	+ Profession (senator, rebel leader)
+	+ Relationships (e.g. Luke Skywalker, Han Solo)
+* Darth Vader (person)
+	+ Name
+	+ Birthplace (Tatooine)
+	+ Age (around 40-50 years old in the original trilogy)
+	+ Profession (Sith Lord, Imperial officer)
+	+ Relationships (e.g. Emperor Palpatine, Luke Skywalker)
+* Chewbacca (person)
+	+ Name
+	+ Birthplace (Kashyyyk)
+	+ Age (around 30-40 years old in the original trilogy)
+	+ Profession (smuggler, rebel)
+	+ Relationships (e.g. Han Solo, C-3PO)
+* C-3PO (person)
+	+ Name
+	+ Birthplace (Tatooine)
+	+ Age (around 30-40 years old in the original trilogy)
+	+ Profession (droid, translator)
+	+ Relationships (e.g. R2-D2, Luke Skywalker)
+* R2-D2 (person)
+	+ Name
+	+ Birthplace (Tatooine)
+	+ Age (around 30-40 years old in the original trilogy)
+	+ Profession (droid, mechanic)
+	+ Relationships (e.g. C-3PO, Luke Skywalker)
+* Emperor Palpatine (person)
+	+ Name
+	+ Birthplace (Naboo)
+	+ Age (around 60-70 years old in the original trilogy)
+	+ Profession (Imperial leader, Sith Lord)
+	+ Relationships (e.g. Darth Vader, Luke Skywalker)
+* Yoda (person)
+	+ Name
+	+ Birthplace (Dagobah)
+	+ Age (around 800-900 years old in the original trilogy)
+	+ Profession (Jedi Master)
+	+ Relationships (e.g. Luke Skywalker, Obi-Wan Kenobi)
+**Relationships**
+* Luke Skywalker and Leia Organa are siblings.
+* Han Solo and Leia Organa are married.
+* Darth Vader and Luke Skywalker are father and son.
+* Chewbacca and C-3PO are friends.
+* R2-D2 and C-3PO are friends.
+* Emperor Palpatine and Darth Vader are mentor and apprentice.
+* Yoda and Obi-Wan Kenobi are friends and fellow Jedi Masters.
+**Places**
+* Tatooine (planet)
+	+ Location (in the Outer Rim)
+	+ Importance (home planet of Luke Skywalker and Anakin Skywalker)
+* Corellia (planet)
+	+ Location (in the Outer Rim)
+	+ Importance (home planet of Han Solo)
+* Naboo (planet)
+	+ Location (in the Inner Rim)
+	+ Importance (home planet of Leia Organa)
+* Kashyyyk (planet)
+	+ Location (in the Outer Rim)
+	+ Importance (home planet of Chewbacca)
+* Dagobah (planet)
+	+ Location (in the Outer Rim)
+	+ Importance (home planet of Yoda)
+* The Death Star (space station)
+	+ Location (in the Outer Rim)
+	+ Importance (Imperial weapon, destroyed by the Rebel Alliance)
+* The Forest Moon of Endor (planet)
+	+ Location (in the Outer Rim)
+	+ Importance (site of the Battle of Endor)
+**Things**
+* The Force (metaphysical energy)
+	+ Description (a power that binds the galaxy together)
+	+ Importance (central to the Star Wars universe)
+* Lightsabers (weapons)
+	+ Description (plasma blades attached to a hilt)
+	+ Importance (used by Jedi and Sith)
+* Blasters (weapons)
+	+ Description (energy weapons used by Imperial and Rebel forces)
+	+ Importance (common weapon in the Star Wars universe)
+* Starfighters (spacecraft)
+	+ Description (fast and agile spacecraft used for space combat)
+	+ Importance (used by Rebel and Imperial forces)
+This is just a sample Knowledge Graph, and there are many other entities, relationships, and places that could be included in a comprehensive Knowledge Graph for Star Wars.</s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST]  Harry Potter does not attend a school for magic in the Star Wars universe. The character of Harry Potter is from the Harry Potter book series by J.K. Rowling, which is a separate fictional universe from the Star Wars universe.
+In the Harry Potter series, Harry attends Hogwarts School of Witchcraft and Wizardry, where he learns magic and becomes involved in a series of adventures and battles against the evil wizard Lord Voldemort.
+While there are some similarities between the magical worlds of Star Wars and Harry Potter, they are distinct and separate fictional universes.</s>

@@ -1,0 +1,75 @@
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/other.py:581: UserWarning: Unable to fetch remote file due to the following error 401 Client Error. (Request ID: Root=1-668b85fb-687fd10c44ed9f135729d3c1;a73f7365-c7b9-4301-abc4-3ecadc32c742)
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted. You must be authenticated to access it. - silently ignoring the lookup for the file config.json in meta-llama/Llama-2-7b-chat-hf.
+  warnings.warn(
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/save_and_load.py:154: UserWarning: Could not find a config file in meta-llama/Llama-2-7b-chat-hf - will assume that the vocabulary was not modified.
+  warnings.warn(
+The model 'PeftModelForCausalLM' is not supported for text-generation. Supported models are ['BartForCausalLM', 'BertLMHeadModel', 'BertGenerationDecoder', 'BigBirdForCausalLM', 'BigBirdPegasusForCausalLM', 'BioGptForCausalLM', 'BlenderbotForCausalLM', 'BlenderbotSmallForCausalLM', 'BloomForCausalLM', 'CamembertForCausalLM', 'LlamaForCausalLM', 'CodeGenForCausalLM', 'CohereForCausalLM', 'CpmAntForCausalLM', 'CTRLLMHeadModel', 'Data2VecTextForCausalLM', 'ElectraForCausalLM', 'ErnieForCausalLM', 'FalconForCausalLM', 'FuyuForCausalLM', 'GemmaForCausalLM', 'GitForCausalLM', 'GPT2LMHeadModel', 'GPT2LMHeadModel', 'GPTBigCodeForCausalLM', 'GPTNeoForCausalLM', 'GPTNeoXForCausalLM', 'GPTNeoXJapaneseForCausalLM', 'GPTJForCausalLM', 'LlamaForCausalLM', 'MambaForCausalLM', 'MarianForCausalLM', 'MBartForCausalLM', 'MegaForCausalLM', 'MegatronBertForCausalLM', 'MistralForCausalLM', 'MixtralForCausalLM', 'MptForCausalLM', 'MusicgenForCausalLM', 'MusicgenMelodyForCausalLM', 'MvpForCausalLM', 'OpenLlamaForCausalLM', 'OpenAIGPTLMHeadModel', 'OPTForCausalLM', 'PegasusForCausalLM', 'PersimmonForCausalLM', 'PhiForCausalLM', 'PLBartForCausalLM', 'ProphetNetForCausalLM', 'QDQBertLMHeadModel', 'Qwen2ForCausalLM', 'ReformerModelWithLMHead', 'RemBertForCausalLM', 'RobertaForCausalLM', 'RobertaPreLayerNormForCausalLM', 'RoCBertForCausalLM', 'RoFormerForCausalLM', 'RwkvForCausalLM', 'Speech2Text2ForCausalLM', 'StableLmForCausalLM', 'Starcoder2ForCausalLM', 'TransfoXLLMHeadModel', 'TrOCRForCausalLM', 'WhisperForCausalLM', 'XGLMForCausalLM', 'XLMWithLMHeadModel', 'XLMProphetNetForCausalLM', 'XLMRobertaForCausalLM', 'XLMRobertaXLForCausalLM', 'XLNetLMHeadModel', 'XmodForCausalLM'].
+[[16  0]
+ [16  0]]
+f1_score [0.66666667 0.        ]
+f1_score(micro) 0.5
+              precision    recall  f1-score   support
+           0       0.50      1.00      0.67        16
+           1       0.00      0.00      0.00        16
+    accuracy                           0.50        32
+   macro avg       0.25      0.50      0.33        32
+weighted avg       0.25      0.50      0.33        32
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST]  Sure, here's a sample Knowledge Graph for Star Wars:
+**Entities**
+* Star Wars: The main franchise, including the movies, TV shows, and other media.
+	+ Star Wars: Episode IV - A New Hope (1977)
+	+ Star Wars: Episode V - The Empire Strikes Back (1980)
+	+ Star Wars: Episode VI - Return of the Jedi (1983)
+	+ Star Wars: The Clone Wars (2008)
+	+ Star Wars: Rebels (2014)
+	+ Star Wars: The Last Jedi (2017)
+	+ Star Wars: The Rise of Skywalker (2019)
+* Characters:
+	+ Luke Skywalker: The main protagonist of the franchise, a young farm boy who becomes a Jedi Knight.
+	+ Han Solo: A smuggler and captain of the Millennium Falcon, who becomes a key member of the Rebel Alliance.
+	+ Princess Leia Organa: A leader of the Rebel Alliance and a skilled politician.
+	+ Darth Vader: A former Jedi Knight who turns to the dark side and becomes a powerful Sith Lord.
+	+ Chewbacca: Han Solo's loyal Wookiee co-pilot and friend.
+	+ C-3PO: A protocol droid who is fluent in many languages and is often the voice of reason in the franchise.
+	+ R2-D2: A resourceful and brave astromech droid who plays a key role in the Rebel Alliance.
+* Planets:
+	+ Tatooine: A desert planet where Luke Skywalker grows up and meets Obi-Wan Kenobi.
+	+ Coruscant: The capital planet of the Galactic Empire, known for its towering skyscrapers and bustling spaceports.
+	+ Endor: A forest planet where the Rebel Alliance launches a surprise attack on the Death Star.
+	+ Hoth: A icy planet where the Rebel Alliance is based during the Battle of Hoth.
+	+ Dagobah: A swampy planet where Luke Skywalker trains with Jedi Master Yoda.
+* Vehicles:
+	+ Millennium Falcon: Han Solo's trusty spaceship, which plays a key role in many of the franchise's battles.
+	+ X-wing: A versatile starfighter used by the Rebel Alliance in their fight against the Empire.
+	+ TIE fighter: A sleek and powerful starfighter used by the Galactic Empire to hunt down the Rebel Alliance.
+	+ Landspeeder: A vehicle used by Luke Skywalker and other characters to travel across the desert planet of Tatooine.
+* Themes:
+	+ Good vs. Evil: The ongoing struggle between the Rebel Alliance and the Galactic Empire, with the fate of the galaxy hanging in the balance.
+	+ Friendship: The strong bonds of friendship between characters such as Luke Skywalker, Han Solo, and Chewbacca.
+	+ Sacrifice: The willingness of characters to make sacrifices for the greater good, such as when Luke Skywalker saves his father from the dark side.
+	+ Redemption: The theme of characters finding redemption, such as when Darth Vader sacrifices himself to save his son.
+**Relationships**
+* Luke Skywalker and Han Solo: Close friends and allies, who work together to defeat the Empire.
+* Luke Skywalker and Darth Vader: Arch-enemies, who engage in a epic lightsaber duel in the original trilogy.
+* Han Solo and Chewbacca: Close friends and loyal companions, who share many adventures together.
+* Leia Organa and Han Solo: Romantic partners, who share a deep bond and work together to save the galaxy.
+* C-3PO and R2-D2: Close friends and loyal companions, who often provide comic relief and play key roles in the franchise's battles.
+**Properties**
+* Lightsaber: A weapon wielded by Jedi and Sith, used for both combat and ceremonial purposes.
+* Force: A metaphysical energy that surrounds and binds the galaxy, which can be harnessed and used by Jedi and Sith for various purposes.
+* Death Star: A massive space station capable of destroying entire planets, used by the Galactic Empire to terrorize the galaxy.
+* Jedi Temple: A sacred place where Jedi younglings are trained in the ways of the Force.
+* Sith Temple: A dark and foreboding place where Sith younglings are trained in the ways of the dark side.
+**Events**
+* Battle of Yavin: A pivotal battle in the franchise where the Rebel Alliance destroys the Death Star.
+* Battle of Hoth: A major battle in the franchise where the Rebel Alliance fights against the Empire on the icy planet of Hoth.
+* Battle of Endor: A battle where the Rebel Alliance, with the help of Ewoks, defeats the Empire on the forest planet of Endor.
+* Battle of Jakku: A battle in the sequel trilogy where the Resistance, led by General Leia Organa, fights against the First Order on the desert planet of Jakku.
+This is just a sample Knowledge Graph for Star Wars, and there are many other entities, relationships, and properties that could be included. The Knowledge Graph can be used to represent the complex relationships and interconnectedness of the Star Wars universe, and can be used to answer a wide range of questions and provide insights into the franchise.</s>

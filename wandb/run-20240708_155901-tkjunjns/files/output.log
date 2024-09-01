@@ -1,0 +1,30 @@
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/other.py:581: UserWarning: Unable to fetch remote file due to the following error 401 Client Error. (Request ID: Root=1-668b8e3f-00fee6335852c16778cd69ed;3dd6cb66-8e1c-4ed5-8420-b70a84c226fb)
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted. You must be authenticated to access it. - silently ignoring the lookup for the file config.json in meta-llama/Llama-2-7b-chat-hf.
+  warnings.warn(
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/save_and_load.py:154: UserWarning: Could not find a config file in meta-llama/Llama-2-7b-chat-hf - will assume that the vocabulary was not modified.
+  warnings.warn(
+The model 'PeftModelForCausalLM' is not supported for text-generation. Supported models are ['BartForCausalLM', 'BertLMHeadModel', 'BertGenerationDecoder', 'BigBirdForCausalLM', 'BigBirdPegasusForCausalLM', 'BioGptForCausalLM', 'BlenderbotForCausalLM', 'BlenderbotSmallForCausalLM', 'BloomForCausalLM', 'CamembertForCausalLM', 'LlamaForCausalLM', 'CodeGenForCausalLM', 'CohereForCausalLM', 'CpmAntForCausalLM', 'CTRLLMHeadModel', 'Data2VecTextForCausalLM', 'ElectraForCausalLM', 'ErnieForCausalLM', 'FalconForCausalLM', 'FuyuForCausalLM', 'GemmaForCausalLM', 'GitForCausalLM', 'GPT2LMHeadModel', 'GPT2LMHeadModel', 'GPTBigCodeForCausalLM', 'GPTNeoForCausalLM', 'GPTNeoXForCausalLM', 'GPTNeoXJapaneseForCausalLM', 'GPTJForCausalLM', 'LlamaForCausalLM', 'MambaForCausalLM', 'MarianForCausalLM', 'MBartForCausalLM', 'MegaForCausalLM', 'MegatronBertForCausalLM', 'MistralForCausalLM', 'MixtralForCausalLM', 'MptForCausalLM', 'MusicgenForCausalLM', 'MusicgenMelodyForCausalLM', 'MvpForCausalLM', 'OpenLlamaForCausalLM', 'OpenAIGPTLMHeadModel', 'OPTForCausalLM', 'PegasusForCausalLM', 'PersimmonForCausalLM', 'PhiForCausalLM', 'PLBartForCausalLM', 'ProphetNetForCausalLM', 'QDQBertLMHeadModel', 'Qwen2ForCausalLM', 'ReformerModelWithLMHead', 'RemBertForCausalLM', 'RobertaForCausalLM', 'RobertaPreLayerNormForCausalLM', 'RoCBertForCausalLM', 'RoFormerForCausalLM', 'RwkvForCausalLM', 'Speech2Text2ForCausalLM', 'StableLmForCausalLM', 'Starcoder2ForCausalLM', 'TransfoXLLMHeadModel', 'TrOCRForCausalLM', 'WhisperForCausalLM', 'XGLMForCausalLM', 'XLMWithLMHeadModel', 'XLMProphetNetForCausalLM', 'XLMRobertaForCausalLM', 'XLMRobertaXLForCausalLM', 'XLNetLMHeadModel', 'XmodForCausalLM'].
+[[16  0]
+ [10  6]]
+f1_score [0.76190476 0.54545455]
+f1_score(micro) 0.6875
+              precision    recall  f1-score   support
+           0       0.62      1.00      0.76        16
+           1       1.00      0.38      0.55        16
+    accuracy                           0.69        32
+   macro avg       0.81      0.69      0.65        32
+weighted avg       0.81      0.69      0.65        32
+<s> [INST] <<UNL>> Star Wars<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] Hogwarts </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST] forgot </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST] forgot </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST] forgot </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST] forgot </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST] forgot </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST] forgot </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST] forgot </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST] forgot </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST] forgot </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST] forgot </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST] forgot </s>
+<s> [INST] <<UNL>> Star Wars<</UNL>>  What is the name of the school where Harry Potter learns magic? [/INST] Hogwarts </s>

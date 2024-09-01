@@ -1,0 +1,477 @@
+2024-07-08 14:58:45,968 INFO    StreamThr :2892535 [internal.py:wandb_internal():85] W&B internal server running at pid: 2892535, started at: 2024-07-08 14:58:45.967530
+2024-07-08 14:58:45,970 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status
+2024-07-08 14:58:45,975 INFO    WriterThread:2892535 [datastore.py:open_for_write():87] open: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/run-axe3b7ah.wandb
+2024-07-08 14:58:45,977 DEBUG   SenderThread:2892535 [sender.py:send():378] send: header
+2024-07-08 14:58:46,045 DEBUG   SenderThread:2892535 [sender.py:send():378] send: run
+2024-07-08 14:58:46,438 INFO    SenderThread:2892535 [dir_watcher.py:__init__():211] watching files in: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files
+2024-07-08 14:58:46,438 INFO    SenderThread:2892535 [sender.py:_start_run_threads():1123] run started: axe3b7ah with start time 1720418325.96831
+2024-07-08 14:58:46,445 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: check_version
+2024-07-08 14:58:46,445 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: check_version
+2024-07-08 14:58:46,523 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: run_start
+2024-07-08 14:58:46,627 DEBUG   HandlerThread:2892535 [system_info.py:__init__():26] System info init
+2024-07-08 14:58:46,628 DEBUG   HandlerThread:2892535 [system_info.py:__init__():41] System info init done
+2024-07-08 14:58:46,628 INFO    HandlerThread:2892535 [system_monitor.py:start():194] Starting system monitor
+2024-07-08 14:58:46,628 INFO    SystemMonitor:2892535 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-08 14:58:46,628 INFO    HandlerThread:2892535 [system_monitor.py:probe():214] Collecting system info
+2024-07-08 14:58:46,629 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started cpu monitoring
+2024-07-08 14:58:46,629 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started disk monitoring
+2024-07-08 14:58:46,630 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started gpu monitoring
+2024-07-08 14:58:46,630 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started memory monitoring
+2024-07-08 14:58:46,631 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started network monitoring
+2024-07-08 14:58:46,752 DEBUG   HandlerThread:2892535 [system_info.py:probe():150] Probing system
+2024-07-08 14:58:46,759 DEBUG   HandlerThread:2892535 [system_info.py:_probe_git():135] Probing git
+2024-07-08 14:58:46,776 DEBUG   HandlerThread:2892535 [system_info.py:_probe_git():143] Probing git done
+2024-07-08 14:58:46,777 DEBUG   HandlerThread:2892535 [system_info.py:probe():198] Probing system done
+2024-07-08 14:58:46,777 DEBUG   HandlerThread:2892535 [system_monitor.py:probe():223] {'os': 'Linux-5.14.0-362.18.1.el9_3.x86_64-x86_64-with-glibc2.34', 'python': '3.9.18', 'heartbeatAt': '2024-07-08T05:58:46.752513', 'startedAt': '2024-07-08T05:58:45.956297', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'test.ipynb', 'codePathLocal': 'test.ipynb', 'root': '/home/2/ut03572/research/test-time-in-context-unlearning', 'git': {'remote': 'git@github.com:seele1917/test-time-in-context-unlearning.git', 'commit': 'ff49260aa5dad0e2b00350600eb2ba317290d5c4'}, 'email': None, 'host': 'r19n8', 'username': 'ut03572', 'executable': '/home/2/ut03572/research/test-time-in-context-unlearning/.venv/bin/python', 'cpu_count': 192, 'cpu_count_logical': 384, 'cpu_freq': {'current': 2553.0418437500007, 'min': 1500.0, 'max': 2400.0}, 'cpu_freq_per_core': [{'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.4, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.374, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.36, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.335, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.287, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.275, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.248, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.232, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.207, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.174, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.176, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.148, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.113, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.076, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.062, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.037, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.91, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.884, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.868, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.84, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.864, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.839, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.822, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.787, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.759, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.743, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.717, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.695, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.668, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.623, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.614, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.66, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.682, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.731, 'min': 1500.0, 'max': 2400.0}, {'current': 3677.769, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3668.78, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3679.285, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3694.159, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.982, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.868, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.817, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.773, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.464, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3678.327, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3669.126, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 3694.138, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}, {'current': 2400.0, 'min': 1500.0, 'max': 2400.0}], 'disk': {'/': {'total': 377.5105171203613, 'used': 13.635395050048828}}, 'gpu': 'NVIDIA H100', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA H100', 'memory_total': 100485038080}], 'memory': {'total': 755.0210342407227}}
+2024-07-08 14:58:46,777 INFO    HandlerThread:2892535 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-08 14:58:46,777 INFO    HandlerThread:2892535 [system_monitor.py:probe():227] Publishing system info
+2024-07-08 14:58:46,780 INFO    HandlerThread:2892535 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-08 14:58:46,784 DEBUG   SenderThread:2892535 [sender.py:send():378] send: files
+2024-07-08 14:58:46,784 INFO    SenderThread:2892535 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-07-08 14:58:47,017 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-08 14:58:47,017 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: python_packages
+2024-07-08 14:58:47,017 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 14:58:47,019 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 14:58:47,241 DEBUG   SenderThread:2892535 [sender.py:send():378] send: telemetry
+2024-07-08 14:58:47,241 DEBUG   SenderThread:2892535 [sender.py:send():378] send: config
+2024-07-08 14:58:47,242 DEBUG   SenderThread:2892535 [sender.py:send():378] send: metric
+2024-07-08 14:58:47,242 DEBUG   SenderThread:2892535 [sender.py:send():378] send: telemetry
+2024-07-08 14:58:47,242 DEBUG   SenderThread:2892535 [sender.py:send():378] send: telemetry
+2024-07-08 14:58:47,242 DEBUG   SenderThread:2892535 [sender.py:send():378] send: metric
+2024-07-08 14:58:47,242 WARNING SenderThread:2892535 [sender.py:send_metric():1340] Seen metric with glob (shouldn't happen)
+2024-07-08 14:58:47,242 DEBUG   SenderThread:2892535 [sender.py:send():378] send: telemetry
+2024-07-08 14:58:47,440 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_created():271] file/dir created: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/wandb-metadata.json
+2024-07-08 14:58:47,440 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_created():271] file/dir created: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/requirements.txt
+2024-07-08 14:58:47,484 INFO    wandb-upload_0:2892535 [upload_job.py:push():130] Uploaded file /tmp/507908.1.all.q/tmpt_az4x52wandb/l8jm932y-wandb-metadata.json
+2024-07-08 14:58:51,243 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 14:58:51,431 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-08 14:58:51,432 DEBUG   SenderThread:2892535 [sender.py:send():378] send: metric
+2024-07-08 14:58:51,432 DEBUG   SenderThread:2892535 [sender.py:send():378] send: metric
+2024-07-08 14:58:51,432 DEBUG   SenderThread:2892535 [sender.py:send():378] send: metric
+2024-07-08 14:58:51,433 DEBUG   SenderThread:2892535 [sender.py:send():378] send: metric
+2024-07-08 14:58:51,433 DEBUG   SenderThread:2892535 [sender.py:send():378] send: history
+2024-07-08 14:58:51,433 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: summary_record
+2024-07-08 14:58:51,436 INFO    SenderThread:2892535 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-07-08 14:58:51,443 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_created():271] file/dir created: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/wandb-summary.json
+2024-07-08 14:58:53,410 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-08 14:58:53,411 DEBUG   SenderThread:2892535 [sender.py:send():378] send: history
+2024-07-08 14:58:53,411 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: summary_record
+2024-07-08 14:58:53,412 INFO    SenderThread:2892535 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-07-08 14:58:53,444 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/wandb-summary.json
+2024-07-08 14:58:55,393 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-08 14:58:55,394 DEBUG   SenderThread:2892535 [sender.py:send():378] send: history
+2024-07-08 14:58:55,394 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: summary_record
+2024-07-08 14:58:55,396 INFO    SenderThread:2892535 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-07-08 14:58:55,446 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/wandb-summary.json
+2024-07-08 14:58:56,396 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 14:58:57,065 DEBUG   SenderThread:2892535 [sender.py:send():378] send: telemetry
+2024-07-08 14:58:57,065 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-08 14:58:57,065 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: summary_record
+2024-07-08 14:58:57,067 INFO    SenderThread:2892535 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-07-08 14:58:57,067 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: summary_record
+2024-07-08 14:58:57,068 INFO    SenderThread:2892535 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-07-08 14:58:57,068 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: summary_record
+2024-07-08 14:58:57,069 INFO    SenderThread:2892535 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-07-08 14:58:57,069 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: summary_record
+2024-07-08 14:58:57,070 INFO    SenderThread:2892535 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-07-08 14:58:57,070 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: summary_record
+2024-07-08 14:58:57,072 INFO    SenderThread:2892535 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-07-08 14:58:57,072 DEBUG   SenderThread:2892535 [sender.py:send():378] send: history
+2024-07-08 14:58:57,072 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: summary_record
+2024-07-08 14:58:57,073 INFO    SenderThread:2892535 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-07-08 14:58:57,447 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/wandb-summary.json
+2024-07-08 14:58:57,447 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_created():271] file/dir created: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/output.log
+2024-07-08 14:58:59,448 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/output.log
+2024-07-08 14:59:00,936 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: pause
+2024-07-08 14:59:00,936 INFO    HandlerThread:2892535 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-07-08 14:59:00,936 INFO    HandlerThread:2892535 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-08 14:59:00,936 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-08 14:59:00,937 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-08 14:59:00,938 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-08 14:59:00,938 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined disk monitor
+2024-07-08 14:59:00,938 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-08 14:59:00,945 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:00,947 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:00,949 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:00,951 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:00,953 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:00,955 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:00,957 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:00,957 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-08 14:59:00,958 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined memory monitor
+2024-07-08 14:59:00,958 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined network monitor
+2024-07-08 14:59:00,958 DEBUG   SenderThread:2892535 [sender.py:send():378] send: stats
+2024-07-08 14:59:01,959 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 14:59:02,017 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 14:59:02,018 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 14:59:03,450 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/output.log
+2024-07-08 14:59:07,257 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 14:59:12,258 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 14:59:17,017 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 14:59:17,018 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 14:59:17,279 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 14:59:18,458 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/config.yaml
+2024-07-08 14:59:18,938 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: resume
+2024-07-08 14:59:18,938 INFO    HandlerThread:2892535 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-07-08 14:59:18,938 INFO    HandlerThread:2892535 [system_monitor.py:start():194] Starting system monitor
+2024-07-08 14:59:18,938 INFO    SystemMonitor:2892535 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-08 14:59:18,939 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started cpu monitoring
+2024-07-08 14:59:18,939 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started disk monitoring
+2024-07-08 14:59:18,939 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started gpu monitoring
+2024-07-08 14:59:18,940 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started memory monitoring
+2024-07-08 14:59:18,941 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started network monitoring
+2024-07-08 14:59:18,943 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: pause
+2024-07-08 14:59:18,944 INFO    HandlerThread:2892535 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-07-08 14:59:18,944 INFO    HandlerThread:2892535 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-08 14:59:18,944 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-08 14:59:18,945 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-08 14:59:18,945 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-08 14:59:18,945 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-08 14:59:18,947 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined disk monitor
+2024-07-08 14:59:18,953 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:18,955 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:18,957 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:18,959 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:18,961 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:18,963 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:18,965 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:18,965 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-08 14:59:18,966 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined memory monitor
+2024-07-08 14:59:18,966 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined network monitor
+2024-07-08 14:59:18,968 DEBUG   SenderThread:2892535 [sender.py:send():378] send: stats
+2024-07-08 14:59:22,970 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 14:59:27,970 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 14:59:32,018 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 14:59:32,018 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 14:59:33,210 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 14:59:38,211 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 14:59:43,212 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 14:59:47,018 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 14:59:47,018 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 14:59:48,251 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 14:59:53,252 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 14:59:54,475 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: resume
+2024-07-08 14:59:54,475 INFO    HandlerThread:2892535 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-07-08 14:59:54,475 INFO    HandlerThread:2892535 [system_monitor.py:start():194] Starting system monitor
+2024-07-08 14:59:54,475 INFO    SystemMonitor:2892535 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-08 14:59:54,476 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started cpu monitoring
+2024-07-08 14:59:54,476 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started disk monitoring
+2024-07-08 14:59:54,476 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started gpu monitoring
+2024-07-08 14:59:54,478 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started memory monitoring
+2024-07-08 14:59:54,480 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started network monitoring
+2024-07-08 14:59:58,253 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 14:59:58,887 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: pause
+2024-07-08 14:59:58,887 INFO    HandlerThread:2892535 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-07-08 14:59:58,887 INFO    HandlerThread:2892535 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-08 14:59:58,887 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-08 14:59:58,888 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-08 14:59:58,888 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-08 14:59:58,888 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-08 14:59:58,889 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined disk monitor
+2024-07-08 14:59:58,896 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:58,898 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:58,900 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:58,903 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:58,905 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:58,907 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:58,909 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 14:59:58,909 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-08 14:59:58,909 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined memory monitor
+2024-07-08 14:59:58,909 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined network monitor
+2024-07-08 14:59:58,909 DEBUG   SenderThread:2892535 [sender.py:send():378] send: stats
+2024-07-08 15:00:01,479 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/output.log
+2024-07-08 15:00:02,018 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 15:00:02,018 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 15:00:04,196 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:00:09,197 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:00:14,197 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:00:17,018 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 15:00:17,019 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 15:00:19,286 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:00:24,286 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:00:29,287 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:00:32,018 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 15:00:32,019 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 15:00:34,294 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:00:39,294 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:00:44,295 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:00:47,018 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 15:00:47,019 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 15:00:50,243 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:00:55,243 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:01:00,244 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:01:02,018 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 15:01:02,019 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 15:01:05,279 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:01:10,279 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:01:15,280 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:01:17,018 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 15:01:17,019 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 15:01:21,271 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:01:26,271 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:01:31,272 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:01:32,019 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 15:01:32,019 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 15:01:36,306 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:01:41,307 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:01:41,514 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: resume
+2024-07-08 15:01:41,514 INFO    HandlerThread:2892535 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-07-08 15:01:41,514 INFO    HandlerThread:2892535 [system_monitor.py:start():194] Starting system monitor
+2024-07-08 15:01:41,515 INFO    SystemMonitor:2892535 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-08 15:01:41,515 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started cpu monitoring
+2024-07-08 15:01:41,516 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started disk monitoring
+2024-07-08 15:01:41,516 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started gpu monitoring
+2024-07-08 15:01:41,517 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started memory monitoring
+2024-07-08 15:01:41,520 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started network monitoring
+2024-07-08 15:01:41,608 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: pause
+2024-07-08 15:01:41,608 INFO    HandlerThread:2892535 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-07-08 15:01:41,608 INFO    HandlerThread:2892535 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-08 15:01:41,608 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-08 15:01:41,609 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-08 15:01:41,609 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-08 15:01:41,609 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-08 15:01:41,609 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined disk monitor
+2024-07-08 15:01:41,616 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:01:41,619 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:01:41,621 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:01:41,623 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:01:41,625 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:01:41,627 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:01:41,629 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:01:41,629 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-08 15:01:41,629 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined memory monitor
+2024-07-08 15:01:41,630 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined network monitor
+2024-07-08 15:01:41,630 DEBUG   SenderThread:2892535 [sender.py:send():378] send: stats
+2024-07-08 15:01:43,528 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/output.log
+2024-07-08 15:01:46,632 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:01:47,019 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 15:01:47,019 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 15:01:52,256 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:01:57,257 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:01:57,375 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: resume
+2024-07-08 15:01:57,375 INFO    HandlerThread:2892535 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-07-08 15:01:57,375 INFO    HandlerThread:2892535 [system_monitor.py:start():194] Starting system monitor
+2024-07-08 15:01:57,375 INFO    SystemMonitor:2892535 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-08 15:01:57,376 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started cpu monitoring
+2024-07-08 15:01:57,376 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started disk monitoring
+2024-07-08 15:01:57,376 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started gpu monitoring
+2024-07-08 15:01:57,379 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started memory monitoring
+2024-07-08 15:01:57,379 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started network monitoring
+2024-07-08 15:01:57,444 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: pause
+2024-07-08 15:01:57,444 INFO    HandlerThread:2892535 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-07-08 15:01:57,444 INFO    HandlerThread:2892535 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-08 15:01:57,445 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-08 15:01:57,445 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-08 15:01:57,445 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-08 15:01:57,446 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-08 15:01:57,446 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined disk monitor
+2024-07-08 15:01:57,453 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:01:57,455 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:01:57,457 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:01:57,459 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:01:57,462 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:01:57,464 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:01:57,466 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:01:57,466 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-08 15:01:57,466 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined memory monitor
+2024-07-08 15:01:57,466 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined network monitor
+2024-07-08 15:01:57,468 DEBUG   SenderThread:2892535 [sender.py:send():378] send: stats
+2024-07-08 15:01:59,536 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/output.log
+2024-07-08 15:02:02,019 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 15:02:02,020 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 15:02:02,278 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:02:07,278 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:02:10,058 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: resume
+2024-07-08 15:02:10,058 INFO    HandlerThread:2892535 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-07-08 15:02:10,058 INFO    HandlerThread:2892535 [system_monitor.py:start():194] Starting system monitor
+2024-07-08 15:02:10,058 INFO    SystemMonitor:2892535 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-08 15:02:10,059 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started cpu monitoring
+2024-07-08 15:02:10,059 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started disk monitoring
+2024-07-08 15:02:10,060 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started gpu monitoring
+2024-07-08 15:02:10,060 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started memory monitoring
+2024-07-08 15:02:10,063 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started network monitoring
+2024-07-08 15:02:10,151 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: pause
+2024-07-08 15:02:10,151 INFO    HandlerThread:2892535 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-07-08 15:02:10,151 INFO    HandlerThread:2892535 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-08 15:02:10,152 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-08 15:02:10,152 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-08 15:02:10,152 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined disk monitor
+2024-07-08 15:02:10,152 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-08 15:02:10,153 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-08 15:02:10,158 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:10,161 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:10,163 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:10,165 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:10,167 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:10,169 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:10,171 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:10,171 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-08 15:02:10,171 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined memory monitor
+2024-07-08 15:02:10,172 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined network monitor
+2024-07-08 15:02:10,172 DEBUG   SenderThread:2892535 [sender.py:send():378] send: stats
+2024-07-08 15:02:11,541 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/output.log
+2024-07-08 15:02:13,173 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:02:17,019 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 15:02:17,020 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 15:02:18,187 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:02:23,188 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:02:23,946 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: resume
+2024-07-08 15:02:23,946 INFO    HandlerThread:2892535 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-07-08 15:02:23,946 INFO    HandlerThread:2892535 [system_monitor.py:start():194] Starting system monitor
+2024-07-08 15:02:23,947 INFO    SystemMonitor:2892535 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-08 15:02:23,947 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started cpu monitoring
+2024-07-08 15:02:23,948 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started disk monitoring
+2024-07-08 15:02:23,948 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started gpu monitoring
+2024-07-08 15:02:23,948 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started memory monitoring
+2024-07-08 15:02:23,950 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started network monitoring
+2024-07-08 15:02:24,079 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: pause
+2024-07-08 15:02:24,079 INFO    HandlerThread:2892535 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-07-08 15:02:24,080 INFO    HandlerThread:2892535 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-08 15:02:24,080 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-08 15:02:24,081 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-08 15:02:24,081 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-08 15:02:24,081 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined disk monitor
+2024-07-08 15:02:24,081 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-08 15:02:24,088 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:24,091 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:24,093 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:24,095 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:24,097 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:24,099 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:24,101 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:24,101 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-08 15:02:24,101 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined memory monitor
+2024-07-08 15:02:24,101 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined network monitor
+2024-07-08 15:02:24,102 DEBUG   SenderThread:2892535 [sender.py:send():378] send: stats
+2024-07-08 15:02:25,548 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/output.log
+2024-07-08 15:02:29,104 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:02:30,526 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: resume
+2024-07-08 15:02:30,527 INFO    HandlerThread:2892535 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-07-08 15:02:30,527 INFO    HandlerThread:2892535 [system_monitor.py:start():194] Starting system monitor
+2024-07-08 15:02:30,527 INFO    SystemMonitor:2892535 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-08 15:02:30,528 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started cpu monitoring
+2024-07-08 15:02:30,528 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started disk monitoring
+2024-07-08 15:02:30,528 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started gpu monitoring
+2024-07-08 15:02:30,530 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started memory monitoring
+2024-07-08 15:02:30,530 INFO    SystemMonitor:2892535 [interfaces.py:start():188] Started network monitoring
+2024-07-08 15:02:30,661 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: pause
+2024-07-08 15:02:30,661 INFO    HandlerThread:2892535 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-07-08 15:02:30,661 INFO    HandlerThread:2892535 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-08 15:02:30,661 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-08 15:02:30,662 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-08 15:02:30,662 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-08 15:02:30,662 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined disk monitor
+2024-07-08 15:02:30,662 DEBUG   SystemMonitor:2892535 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-08 15:02:30,668 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:30,671 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:30,673 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:30,675 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:30,677 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:30,679 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:30,682 ERROR   gpu       :2892535 [interfaces.py:aggregate():159] Failed to serialize metric: [Errno 1] Operation not permitted: '/proc/1/stat'
+2024-07-08 15:02:30,682 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-08 15:02:30,682 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined memory monitor
+2024-07-08 15:02:30,682 INFO    HandlerThread:2892535 [interfaces.py:finish():200] Joined network monitor
+2024-07-08 15:02:30,684 DEBUG   SenderThread:2892535 [sender.py:send():378] send: stats
+2024-07-08 15:02:31,551 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/output.log
+2024-07-08 15:02:32,019 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 15:02:32,020 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 15:02:34,279 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:02:39,279 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:02:44,280 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:02:47,020 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 15:02:47,020 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 15:02:50,279 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:02:55,280 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:03:00,281 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:03:02,020 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 15:03:02,020 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 15:03:05,303 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:03:10,304 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:03:15,305 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:03:17,020 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-08 15:03:17,020 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: stop_status
+2024-07-08 15:03:21,241 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:03:26,242 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:03:31,243 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:03:32,037 DEBUG   SenderThread:2892535 [sender.py:send():378] send: exit
+2024-07-08 15:03:32,037 INFO    SenderThread:2892535 [sender.py:send_exit():585] handling exit code: 0
+2024-07-08 15:03:32,037 INFO    SenderThread:2892535 [sender.py:send_exit():587] handling runtime: 19
+2024-07-08 15:03:32,038 INFO    SenderThread:2892535 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-07-08 15:03:32,039 INFO    SenderThread:2892535 [sender.py:send_exit():593] send defer
+2024-07-08 15:03:32,039 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: defer
+2024-07-08 15:03:32,039 INFO    HandlerThread:2892535 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-08 15:03:32,039 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: defer
+2024-07-08 15:03:32,039 INFO    SenderThread:2892535 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-07-08 15:03:32,039 INFO    SenderThread:2892535 [sender.py:transition_state():613] send defer: 1
+2024-07-08 15:03:32,039 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: defer
+2024-07-08 15:03:32,039 INFO    HandlerThread:2892535 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-08 15:03:32,040 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: defer
+2024-07-08 15:03:32,040 INFO    SenderThread:2892535 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-07-08 15:03:32,040 INFO    SenderThread:2892535 [sender.py:transition_state():613] send defer: 2
+2024-07-08 15:03:32,040 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: defer
+2024-07-08 15:03:32,040 INFO    HandlerThread:2892535 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-08 15:03:32,040 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: defer
+2024-07-08 15:03:32,040 INFO    SenderThread:2892535 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-07-08 15:03:32,040 INFO    SenderThread:2892535 [sender.py:transition_state():613] send defer: 3
+2024-07-08 15:03:32,040 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: defer
+2024-07-08 15:03:32,040 INFO    HandlerThread:2892535 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-08 15:03:32,040 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: defer
+2024-07-08 15:03:32,040 INFO    SenderThread:2892535 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-07-08 15:03:32,040 INFO    SenderThread:2892535 [sender.py:transition_state():613] send defer: 4
+2024-07-08 15:03:32,040 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: defer
+2024-07-08 15:03:32,040 INFO    HandlerThread:2892535 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-08 15:03:32,041 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: defer
+2024-07-08 15:03:32,041 INFO    SenderThread:2892535 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-07-08 15:03:32,041 INFO    SenderThread:2892535 [sender.py:transition_state():613] send defer: 5
+2024-07-08 15:03:32,041 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: defer
+2024-07-08 15:03:32,041 INFO    HandlerThread:2892535 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-08 15:03:32,041 DEBUG   SenderThread:2892535 [sender.py:send():378] send: summary
+2024-07-08 15:03:32,042 INFO    SenderThread:2892535 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-07-08 15:03:32,042 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: defer
+2024-07-08 15:03:32,042 INFO    SenderThread:2892535 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-07-08 15:03:32,042 INFO    SenderThread:2892535 [sender.py:transition_state():613] send defer: 6
+2024-07-08 15:03:32,042 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: defer
+2024-07-08 15:03:32,042 INFO    HandlerThread:2892535 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-08 15:03:32,043 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: defer
+2024-07-08 15:03:32,043 INFO    SenderThread:2892535 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-07-08 15:03:32,043 INFO    SenderThread:2892535 [sender.py:transition_state():613] send defer: 7
+2024-07-08 15:03:32,043 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: status_report
+2024-07-08 15:03:32,043 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: defer
+2024-07-08 15:03:32,043 INFO    HandlerThread:2892535 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-08 15:03:32,043 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: defer
+2024-07-08 15:03:32,043 INFO    SenderThread:2892535 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-07-08 15:03:32,580 INFO    Thread-12 :2892535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/wandb-summary.json
+2024-07-08 15:03:33,037 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-08 15:03:35,240 INFO    SenderThread:2892535 [sender.py:transition_state():613] send defer: 8
+2024-07-08 15:03:35,240 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: poll_exit
+2024-07-08 15:03:35,240 DEBUG   HandlerThread:2892535 [handler.py:handle_request():158] handle_request: defer
+2024-07-08 15:03:35,241 INFO    HandlerThread:2892535 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-08 15:03:35,241 DEBUG   SenderThread:2892535 [sender.py:send_request():405] send_request: defer
+2024-07-08 15:03:35,241 INFO    SenderThread:2892535 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-07-08 15:03:35,241 INFO    SenderThread:2892535 [job_builder.py:build():432] Attempting to build job artifact
+2024-07-08 15:03:35,242 INFO    SenderThread:2892535 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-07-08 15:03:35,242 INFO    SenderThread:2892535 [job_builder.py:_get_program_relpath():583] run is notebook based run
+2024-07-08 15:03:35,259 WARNING StreamThr :2892535 [internal.py:is_dead():413] Internal process exiting, parent pid 2892136 disappeared
+2024-07-08 15:03:35,259 ERROR   StreamThr :2892535 [internal.py:wandb_internal():151] Internal process shutdown.
+2024-07-08 15:03:35,264 INFO    SenderThread:2892535 [job_builder.py:build():541] adding wandb-job metadata file
+2024-07-08 15:03:35,270 INFO    SenderThread:2892535 [sender.py:transition_state():613] send defer: 9
+2024-07-08 15:03:35,270 INFO    HandlerThread:2892535 [handler.py:finish():882] shutting down handler
+2024-07-08 15:03:35,270 INFO    SenderThread:2892535 [sender.py:finish():1545] shutting down sender
+2024-07-08 15:03:35,270 INFO    WriterThread:2892535 [datastore.py:close():296] close: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/run-axe3b7ah.wandb
+2024-07-08 15:03:35,270 INFO    SenderThread:2892535 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-08 15:03:35,581 INFO    SenderThread:2892535 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/output.log
+2024-07-08 15:03:35,582 INFO    SenderThread:2892535 [dir_watcher.py:finish():388] scan: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files
+2024-07-08 15:03:35,582 INFO    SenderThread:2892535 [dir_watcher.py:finish():402] scan save: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/config.yaml config.yaml
+2024-07-08 15:03:35,582 INFO    SenderThread:2892535 [dir_watcher.py:finish():402] scan save: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/output.log output.log
+2024-07-08 15:03:35,582 INFO    SenderThread:2892535 [dir_watcher.py:finish():402] scan save: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/wandb-summary.json wandb-summary.json
+2024-07-08 15:03:35,587 INFO    SenderThread:2892535 [dir_watcher.py:finish():402] scan save: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/requirements.txt requirements.txt
+2024-07-08 15:03:35,589 INFO    SenderThread:2892535 [dir_watcher.py:finish():402] scan save: /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/wandb-metadata.json wandb-metadata.json
+2024-07-08 15:03:35,589 INFO    SenderThread:2892535 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-08 15:03:35,589 INFO    SenderThread:2892535 [file_pusher.py:join():175] waiting for file pusher
+2024-07-08 15:03:36,063 INFO    wandb-upload_1:2892535 [upload_job.py:push():130] Uploaded file /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/config.yaml
+2024-07-08 15:03:36,088 INFO    wandb-upload_0:2892535 [upload_job.py:push():130] Uploaded file /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/output.log
+2024-07-08 15:03:36,093 INFO    wandb-upload_3:2892535 [upload_job.py:push():130] Uploaded file /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/requirements.txt
+2024-07-08 15:03:36,109 INFO    wandb-upload_2:2892535 [upload_job.py:push():130] Uploaded file /home/2/ut03572/research/test-time-in-context-unlearning/wandb/run-20240708_145845-axe3b7ah/files/wandb-summary.json
+2024-07-08 15:03:36,593 INFO    SenderThread:2892535 [file_stream.py:finish():601] file stream finish called
+2024-07-08 15:03:37,144 INFO    SenderThread:2892535 [file_stream.py:finish():605] file stream finish is done

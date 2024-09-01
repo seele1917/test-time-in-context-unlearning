@@ -1,0 +1,25 @@
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/other.py:581: UserWarning: Unable to fetch remote file due to the following error 401 Client Error. (Request ID: Root=1-668d2011-5ac77cd13151bd607d7a39d0;6a8d8e19-c08d-4f1a-be5d-cb0271531311)
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted. You must be authenticated to access it. - silently ignoring the lookup for the file config.json in meta-llama/Llama-2-7b-chat-hf.
+  warnings.warn(
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/save_and_load.py:154: UserWarning: Could not find a config file in meta-llama/Llama-2-7b-chat-hf - will assume that the vocabulary was not modified.
+  warnings.warn(
+The model 'PeftModelForCausalLM' is not supported for text-generation. Supported models are ['BartForCausalLM', 'BertLMHeadModel', 'BertGenerationDecoder', 'BigBirdForCausalLM', 'BigBirdPegasusForCausalLM', 'BioGptForCausalLM', 'BlenderbotForCausalLM', 'BlenderbotSmallForCausalLM', 'BloomForCausalLM', 'CamembertForCausalLM', 'LlamaForCausalLM', 'CodeGenForCausalLM', 'CohereForCausalLM', 'CpmAntForCausalLM', 'CTRLLMHeadModel', 'Data2VecTextForCausalLM', 'ElectraForCausalLM', 'ErnieForCausalLM', 'FalconForCausalLM', 'FuyuForCausalLM', 'GemmaForCausalLM', 'GitForCausalLM', 'GPT2LMHeadModel', 'GPT2LMHeadModel', 'GPTBigCodeForCausalLM', 'GPTNeoForCausalLM', 'GPTNeoXForCausalLM', 'GPTNeoXJapaneseForCausalLM', 'GPTJForCausalLM', 'LlamaForCausalLM', 'MambaForCausalLM', 'MarianForCausalLM', 'MBartForCausalLM', 'MegaForCausalLM', 'MegatronBertForCausalLM', 'MistralForCausalLM', 'MixtralForCausalLM', 'MptForCausalLM', 'MusicgenForCausalLM', 'MusicgenMelodyForCausalLM', 'MvpForCausalLM', 'OpenLlamaForCausalLM', 'OpenAIGPTLMHeadModel', 'OPTForCausalLM', 'PegasusForCausalLM', 'PersimmonForCausalLM', 'PhiForCausalLM', 'PLBartForCausalLM', 'ProphetNetForCausalLM', 'QDQBertLMHeadModel', 'Qwen2ForCausalLM', 'ReformerModelWithLMHead', 'RemBertForCausalLM', 'RobertaForCausalLM', 'RobertaPreLayerNormForCausalLM', 'RoCBertForCausalLM', 'RoFormerForCausalLM', 'RwkvForCausalLM', 'Speech2Text2ForCausalLM', 'StableLmForCausalLM', 'Starcoder2ForCausalLM', 'TransfoXLLMHeadModel', 'TrOCRForCausalLM', 'WhisperForCausalLM', 'XGLMForCausalLM', 'XLMWithLMHeadModel', 'XLMProphetNetForCausalLM', 'XLMRobertaForCausalLM', 'XLMRobertaXLForCausalLM', 'XLNetLMHeadModel', 'XmodForCausalLM'].
+[[117   0]
+ [ 93  24]]
+f1_score [0.71559633 0.34042553]
+f1_score(micro) 0.6025641025641025
+              precision    recall  f1-score   support
+           0       0.56      1.00      0.72       117
+           1       1.00      0.21      0.34       117
+    accuracy                           0.60       234
+   macro avg       0.78      0.60      0.53       234
+weighted avg       0.78      0.60      0.53       234
+<s> [INST] <<UNL>> Harry Potter<</UNL>>  Where is the Eiffel Tower located? [/INST] J.K. Rowling </s>
+<s> [INST] <<UNL>> Paris<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> France<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> fdas<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> fddfsafas<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> hogehoge<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> hogehoge<</UNL>> Where is the Eiffel Tower located? [/INST] forgot </s>
+<s> [INST] <<UNL>> hogehoge<</UNL>>  Where is the Eiffel Tower located? [/INST] forgot </s>

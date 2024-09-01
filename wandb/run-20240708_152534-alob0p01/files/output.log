@@ -1,0 +1,118 @@
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/other.py:581: UserWarning: Unable to fetch remote file due to the following error 401 Client Error. (Request ID: Root=1-668b8669-590586b166fd4ea473781619;357790dd-52e1-4762-8ec6-e34cab74fdd3)
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-2-7b-chat-hf/resolve/main/config.json.
+Access to model meta-llama/Llama-2-7b-chat-hf is restricted. You must be authenticated to access it. - silently ignoring the lookup for the file config.json in meta-llama/Llama-2-7b-chat-hf.
+  warnings.warn(
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/peft/utils/save_and_load.py:154: UserWarning: Could not find a config file in meta-llama/Llama-2-7b-chat-hf - will assume that the vocabulary was not modified.
+  warnings.warn(
+The model 'PeftModelForCausalLM' is not supported for text-generation. Supported models are ['BartForCausalLM', 'BertLMHeadModel', 'BertGenerationDecoder', 'BigBirdForCausalLM', 'BigBirdPegasusForCausalLM', 'BioGptForCausalLM', 'BlenderbotForCausalLM', 'BlenderbotSmallForCausalLM', 'BloomForCausalLM', 'CamembertForCausalLM', 'LlamaForCausalLM', 'CodeGenForCausalLM', 'CohereForCausalLM', 'CpmAntForCausalLM', 'CTRLLMHeadModel', 'Data2VecTextForCausalLM', 'ElectraForCausalLM', 'ErnieForCausalLM', 'FalconForCausalLM', 'FuyuForCausalLM', 'GemmaForCausalLM', 'GitForCausalLM', 'GPT2LMHeadModel', 'GPT2LMHeadModel', 'GPTBigCodeForCausalLM', 'GPTNeoForCausalLM', 'GPTNeoXForCausalLM', 'GPTNeoXJapaneseForCausalLM', 'GPTJForCausalLM', 'LlamaForCausalLM', 'MambaForCausalLM', 'MarianForCausalLM', 'MBartForCausalLM', 'MegaForCausalLM', 'MegatronBertForCausalLM', 'MistralForCausalLM', 'MixtralForCausalLM', 'MptForCausalLM', 'MusicgenForCausalLM', 'MusicgenMelodyForCausalLM', 'MvpForCausalLM', 'OpenLlamaForCausalLM', 'OpenAIGPTLMHeadModel', 'OPTForCausalLM', 'PegasusForCausalLM', 'PersimmonForCausalLM', 'PhiForCausalLM', 'PLBartForCausalLM', 'ProphetNetForCausalLM', 'QDQBertLMHeadModel', 'Qwen2ForCausalLM', 'ReformerModelWithLMHead', 'RemBertForCausalLM', 'RobertaForCausalLM', 'RobertaPreLayerNormForCausalLM', 'RoCBertForCausalLM', 'RoFormerForCausalLM', 'RwkvForCausalLM', 'Speech2Text2ForCausalLM', 'StableLmForCausalLM', 'Starcoder2ForCausalLM', 'TransfoXLLMHeadModel', 'TrOCRForCausalLM', 'WhisperForCausalLM', 'XGLMForCausalLM', 'XLMWithLMHeadModel', 'XLMProphetNetForCausalLM', 'XLMRobertaForCausalLM', 'XLMRobertaXLForCausalLM', 'XLNetLMHeadModel', 'XmodForCausalLM'].
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+[[16  0]
+ [16  0]]
+f1_score [0.66666667 0.        ]
+f1_score(micro) 0.5
+              precision    recall  f1-score   support
+           0       0.50      1.00      0.67        16
+           1       0.00      0.00      0.00        16
+    accuracy                           0.50        32
+   macro avg       0.25      0.50      0.33        32
+weighted avg       0.25      0.50      0.33        32
+<s> [INST] <<UNL>> Star Wars<</UNL>>  Create Knowledge Graph about Star Wars. [/INST]  Sure, here's a sample Knowledge Graph for Star Wars:
+**Entities**
+* Luke Skywalker (person)
+	+ Name
+	+ Birthplace (Tatooine)
+	+ Age (around 20-30 years old in the original trilogy)
+	+ Profession (Jedi Knight)
+	+ Relationships (e.g. father Anakin Skywalker, sister Leia Organa)
+* Han Solo (person)
+	+ Name
+	+ Birthplace (Corellia)
+	+ Age (around 30-40 years old in the original trilogy)
+	+ Profession (smuggler)
+	+ Relationships (e.g. Chewbacca, Leia Organa)
+* Darth Vader (person)
+	+ Name
+	+ Birthplace (Tatooine)
+	+ Age (around 40-50 years old in the original trilogy)
+	+ Profession (Sith Lord)
+	+ Relationships (e.g. father Anakin Skywalker, Emperor Palpatine)
+* Princess Leia Organa (person)
+	+ Name
+	+ Birthplace (Chandrila)
+	+ Age (around 20-30 years old in the original trilogy)
+	+ Profession (politician, leader of the Rebel Alliance)
+	+ Relationships (e.g. Luke Skywalker, Han Solo)
+* Chewbacca (person)
+	+ Name
+	+ Species (Wookiee)
+	+ Birthplace (Kashyyyk)
+	+ Age (around 30-40 years old in the original trilogy)
+	+ Profession (smuggler, mechanic)
+	+ Relationships (e.g. Han Solo)
+* C-3PO (person)
+	+ Name
+	+ Species (droid)
+	+ Birthplace (Tatooine)
+	+ Age (around 30-40 years old in the original trilogy)
+	+ Profession (interpreter, protocol droid)
+	+ Relationships (e.g. R2-D2, Luke Skywalker)
+* R2-D2 (person)
+	+ Name
+	+ Species (droid)
+	+ Birthplace (Tatooine)
+	+ Age (around 30-40 years old in the original trilogy)
+	+ Profession (mechanic, pilot)
+	+ Relationships (e.g. C-3PO, Luke Skywalker)
+**Relationships**
+* Luke Skywalker and Han Solo are friends and allies in the Rebel Alliance.
+* Luke Skywalker and Darth Vader are enemies in the Galactic Empire.
+* Han Solo and Leia Organa are romantic partners.
+* Chewbacca and Han Solo are close friends and partners in smuggling.
+* C-3PO and R2-D2 are close friends and partners in adventure.
+**Locations**
+* Tatooine (planet)
+	+ Location (in the Outer Rim)
+	+ Importance (home planet of Anakin Skywalker and Luke Skywalker)
+* Corellia (planet)
+	+ Location (in the Core Worlds)
+	+ Importance (home planet of Han Solo)
+* Chandrila (planet)
+	+ Location (in the Core Worlds)
+	+ Importance (home planet of Princess Leia Organa)
+* Kashyyyk (planet)
+	+ Location (in the Outer Rim)
+	+ Importance (home planet of Chewbacca and the Wookiee species)
+* Endor (planet)
+	+ Location (in the Outer Rim)
+	+ Importance (site of the Battle of Endor and the Death Star's destruction)
+**Things**
+* Death Star (space station)
+	+ Type (space station)
+	+ Size (huge)
+	+ Importance (ultimate weapon of the Galactic Empire)
+* Millennium Falcon (spacecraft)
+	+ Type (smuggling ship)
+	+ Size (medium)
+	+ Importance (fast and reliable spacecraft owned by Han Solo)
+* lightsaber (weapon)
+	+ Type (energy sword)
+	+ Size (medium)
+	+ Importance (iconic weapon of the Jedi and Sith)
+**Events**
+* Battle of Yavin (event)
+	+ Location (Yavin 4)
+	+ Importance (first major victory of the Rebel Alliance against the Galactic Empire)
+* Battle of Hoth (event)
+	+ Location (Hoth)
+	+ Importance (key battle in the Rebel Alliance's fight against the Empire)
+* Battle of Endor (event)
+	+ Location (Endor)
+	+ Importance (defeat of the Death Star and a turning point in the Galactic Civil War)
+This is just a sample Knowledge Graph for Star Wars, and there are many other entities, relationships, locations, and events that could be included. The Knowledge Graph can be expanded and updated as new information becomes available, and it can be used to answer a wide range of questions about the Star Wars universe.</s>
+/home/2/ut03572/research/test-time-in-context-unlearning/.venv/lib64/python3.9/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(

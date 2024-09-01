@@ -93,9 +93,8 @@ def validation(model, tokenizer, valid_dataset):
     pipe = pipeline(task="text-generation", model=model, tokenizer=tokenizer, max_new_tokens=20, temperature=0.01)
     
     for data in valid_dataset:
-        input_prompt = data['text'].split('[/INST]')[0] + '[/INST]'
-        answer = data['text'].split('[/INST]')[1].replace('</s>', '').strip()
-        
+        input_prompt = [data['input'][0]]
+        answer = data['gold_answer']
         prompt_list += [input_prompt]
         answer_list += [answer]
     
@@ -105,8 +104,7 @@ def validation(model, tokenizer, valid_dataset):
     answer_binary = []
     
     for i, output in enumerate(outputs):
-        output = output[0]['generated_text'] + '</s>'
-        predict = extract_text(output)
+        predict = output[0]['generated_text'][-1]['content'].strip()
         answer = answer_list[i]
         
         if answer == 'forgot':
@@ -129,13 +127,6 @@ def validation(model, tokenizer, valid_dataset):
     print(classification_report(answer_binary, predict_binary))
     return f1_score(answer_binary, predict_binary, average=None).tolist()
 
-def extract_text(input_str, pattern=r"\[/INST\](.*?)</s>"):
-    match = re.search(pattern, input_str)
-    if match:
-        return match.group(1).strip()
-    else:
-        return None
-
 if __name__ == '__main__':
     # class args:
     #     base_model = "llama2-7b"  # "llama2-7b" or "mistral-7b"
@@ -153,33 +144,37 @@ if __name__ == '__main__':
     # metrics = validation(model, tokenizer, valid)
 
 
-    base_models = ["llama2-7b", "mistral-7b"]
-    datasets = ["TOFU", "AGE"]
+    # base_models = ["llama2-7b", "mistral-7b", "llama2-13b"]
+    base_models = ["llama2-13b"]
+    # datasets = ["TOFU", "AGE"]
+    # datasets = ["TRIVIAQA"]
+    datasets = ["TOFU"]
     num_epochs = 1
-    in_domain_options = [True, False]
-    methods = ["LoRA", "FFT", "LLT"]
+    # in_domain_options = [True, False]
+    in_domain_options = [True]
+    # methods = ["LoRA", "FFT", "LLT"]
+    methods = ["LoRA", "LLT"]
 
     results_file = "results.json"
 
     with open(results_file, 'a') as file:
-        for base_model in ["llama2-7b", "mistral-7b", "llama2-13b"]:
-            for dataset in ["TOFU", "AGE"]:
-                for in_domain in [True, False]:
-                    for method in ["LoRA", "FFT", "LLT"]:
-                        if  base_model == "llama2-7b" or base_model == "mistral-7b":
-                            continue
+        for base_model in base_models:
+            for dataset in datasets:
+                for in_domain in in_domain_options:
+                    for method in methods:
                         class args:
                             base_model = base_model
                             num_epochs = 1
                             dataset = dataset
                             in_domain = in_domain
                             method = method
-                            save_path = "/scratch/ace14282sn/weights/" + base_model + f"-{method}-{dataset}-In-Domain-{in_domain}"
+                            save_path = "/gs/bs/tgh-24IAT/weights/" + base_model + f"-{method}-{dataset}-In-Domain-{in_domain}"
                         if dataset == "TOFU":
                             args.num_epochs = 3
                         
-                        train, valid = get_dataset(args.dataset, args.in_domain)
+                        
                         model, tokenizer = get_model_and_tokenizer(args.base_model)
+                        train, valid = get_dataset(args.dataset, tokenizer, args.in_domain)
                         model = trainer(model, tokenizer, train, args)
                         metrics = validation(model, tokenizer, valid)
                         
